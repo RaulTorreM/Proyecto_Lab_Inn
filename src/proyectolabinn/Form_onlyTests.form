@@ -107,7 +107,7 @@
     <Container class="javax.swing.JFrame" name="jF_A&#xf1;adirProductos">
       <Properties>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[490, 330]"/>
+          <Dimension value="[570, 250]"/>
         </Property>
       </Properties>
 
@@ -160,7 +160,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                  <EmptySpace pref="42" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -202,7 +202,7 @@
                       <Component id="btnIngresarProducto" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnCancelar_NuevoProd" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="25" max="32767" attributes="0"/>
+                  <EmptySpace pref="38" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

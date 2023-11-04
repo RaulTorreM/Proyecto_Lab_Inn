@@ -153,7 +153,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
                 .addContainerGap(19, Short.MAX_VALUE))
         );
 
-        jF_AñadirProductos.setMinimumSize(new java.awt.Dimension(490, 330));
+        jF_AñadirProductos.setMinimumSize(new java.awt.Dimension(570, 250));
 
         jLabel2.setText("Añadir Nuevo Producto");
 
@@ -238,7 +238,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jF_AñadirProductosLayout.createSequentialGroup()
                                 .addComponent(btnCancelar_NuevoProd, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(21, 21, 21)))))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         jF_AñadirProductosLayout.setVerticalGroup(
             jF_AñadirProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -270,7 +270,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
                 .addGroup(jF_AñadirProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnIngresarProducto)
                     .addComponent(btnCancelar_NuevoProd))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
 
         jF_VerCategorias.setMinimumSize(new java.awt.Dimension(750, 300));
@@ -669,7 +669,53 @@ public class Form_onlyTests extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCancelar_NuevoProdActionPerformed
 
     private void btnIngresarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarProductoActionPerformed
+        CheckConnection con = new CheckConnection();
         
+        String IDProducto;
+        String proNombre;
+        String proPrecio;
+        String IDCategoria = null, catNombre;
+        String proTalla;
+        
+        
+        
+        
+        try{
+              
+            IDProducto = jText_IDProducto.getText();
+            proNombre = jText_proNombre.getText();
+            proPrecio = jText_proPrecio.getText();
+            proTalla = jText_proTalla.getText();
+            catNombre = (String) jCBox_catNombre.getSelectedItem();
+            
+            String query = "SELECT IDCategoria FROM tblCategorias WHERE catNombre = '"+ catNombre + "'";
+            ResultSet rsRV = EjecutarQuery(con, query);  
+            
+            if (rsRV.next()) {
+                IDCategoria = rsRV.getString("IDCategoria");
+            }
+            
+            rsRV.close();
+            
+            
+            Statement st = null;
+            st = con.ObtenerConexion().createStatement();
+            st.executeUpdate("INSERT INTO tblProductos (IDProducto, proNombre, proPrecio, IDCategoria, proTalla )" + 
+                    " VALUES('" + IDProducto + "', '" + proNombre + "', '" + proPrecio + "', '" + IDCategoria + "', '" + proTalla + "')");
+            
+            
+            JOptionPane.showMessageDialog(null, "Se registró producto...");
+            
+            jText_IDProducto.setText("");
+            jText_proNombre.setText("");
+            jText_proPrecio.setText("");
+            jText_proTalla.setText("");
+            jF_AñadirProductos.setVisible(false);
+        }
+        catch(Exception e){
+                JOptionPane.showMessageDialog(null,"No se Pudo Agregar","Mensaje",JOptionPane.CANCEL_OPTION);
+                jText_catNombre.setText("");
+        }
     }//GEN-LAST:event_btnIngresarProductoActionPerformed
 
     /**
