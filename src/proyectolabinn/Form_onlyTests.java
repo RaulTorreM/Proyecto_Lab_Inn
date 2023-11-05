@@ -128,8 +128,26 @@ public class Form_onlyTests extends javax.swing.JFrame {
         jText_sucNombre = new javax.swing.JTextField();
         jText_sucDireccion = new javax.swing.JTextField();
         jText_sucContacto = new javax.swing.JTextField();
-        btnIngresarProveedor1 = new javax.swing.JButton();
-        btnCancelar_Nuevoprov1 = new javax.swing.JButton();
+        btnIngresarSucursal = new javax.swing.JButton();
+        btnCancelar_NuevoSuc = new javax.swing.JButton();
+        jF_AñadirUsuario = new javax.swing.JFrame();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jText_IDUsuario = new javax.swing.JTextField();
+        jText_usuNombre = new javax.swing.JTextField();
+        jText_usuPassword = new javax.swing.JTextField();
+        jCBox_sucNombre = new javax.swing.JComboBox();
+        btnIngresarUsuario = new javax.swing.JButton();
+        btnCancelar_NuevoUsu = new javax.swing.JButton();
+        jF_VerUsuarios = new javax.swing.JFrame();
+        jLabel_listaTallas3 = new javax.swing.JLabel();
+        JScrollPane13 = new javax.swing.JScrollPane();
+        tblListaUsuarios = new javax.swing.JTable();
+        btnNuevoUsuario = new javax.swing.JButton();
+        btnBorrarUsuario = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         btnVerProductos = new javax.swing.JButton();
@@ -140,6 +158,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         jF_VerProductos.setMinimumSize(new java.awt.Dimension(750, 300));
 
@@ -1004,17 +1023,17 @@ public class Form_onlyTests extends javax.swing.JFrame {
 
         jText_sucContacto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
-        btnIngresarProveedor1.setText("Añadir");
-        btnIngresarProveedor1.addActionListener(new java.awt.event.ActionListener() {
+        btnIngresarSucursal.setText("Añadir");
+        btnIngresarSucursal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarProveedor1ActionPerformed(evt);
+                btnIngresarSucursalActionPerformed(evt);
             }
         });
 
-        btnCancelar_Nuevoprov1.setText("Cancelar");
-        btnCancelar_Nuevoprov1.addActionListener(new java.awt.event.ActionListener() {
+        btnCancelar_NuevoSuc.setText("Cancelar");
+        btnCancelar_NuevoSuc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCancelar_Nuevoprov1ActionPerformed(evt);
+                btnCancelar_NuevoSucActionPerformed(evt);
             }
         });
 
@@ -1050,9 +1069,9 @@ public class Form_onlyTests extends javax.swing.JFrame {
                 .addContainerGap(42, Short.MAX_VALUE))
             .addGroup(jF_AñadirSucursalLayout.createSequentialGroup()
                 .addGap(53, 53, 53)
-                .addComponent(btnIngresarProveedor1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnIngresarSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnCancelar_Nuevoprov1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnCancelar_NuevoSuc, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(67, 67, 67))
         );
         jF_AñadirSucursalLayout.setVerticalGroup(
@@ -1078,9 +1097,191 @@ public class Form_onlyTests extends javax.swing.JFrame {
                     .addComponent(jLabel25))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addGroup(jF_AñadirSucursalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnIngresarProveedor1)
-                    .addComponent(btnCancelar_Nuevoprov1))
+                    .addComponent(btnIngresarSucursal)
+                    .addComponent(btnCancelar_NuevoSuc))
                 .addGap(46, 46, 46))
+        );
+
+        jF_AñadirUsuario.setMinimumSize(new java.awt.Dimension(570, 250));
+
+        jLabel5.setText("Añadir Nuevo Usuario");
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel7.setText("ID Usuario:");
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel10.setText("Nombre:");
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel14.setText("Contraseña :");
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel15.setText("Acceso a:");
+
+        jText_IDUsuario.setEditable(false);
+        jText_IDUsuario.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jText_usuNombre.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jText_usuPassword.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        btnIngresarUsuario.setText("Añadir");
+        btnIngresarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarUsuarioActionPerformed(evt);
+            }
+        });
+
+        btnCancelar_NuevoUsu.setText("Cancelar");
+        btnCancelar_NuevoUsu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelar_NuevoUsuActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jF_AñadirUsuarioLayout = new javax.swing.GroupLayout(jF_AñadirUsuario.getContentPane());
+        jF_AñadirUsuario.getContentPane().setLayout(jF_AñadirUsuarioLayout);
+        jF_AñadirUsuarioLayout.setHorizontalGroup(
+            jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_AñadirUsuarioLayout.createSequentialGroup()
+                .addGroup(jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jF_AñadirUsuarioLayout.createSequentialGroup()
+                        .addGap(161, 161, 161)
+                        .addComponent(jLabel5))
+                    .addGroup(jF_AñadirUsuarioLayout.createSequentialGroup()
+                        .addGroup(jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jF_AñadirUsuarioLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jF_AñadirUsuarioLayout.createSequentialGroup()
+                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jText_usuNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jF_AñadirUsuarioLayout.createSequentialGroup()
+                                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jText_usuPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jF_AñadirUsuarioLayout.createSequentialGroup()
+                                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jCBox_sucNombre, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addGroup(jF_AñadirUsuarioLayout.createSequentialGroup()
+                                .addGap(60, 60, 60)
+                                .addComponent(btnIngresarUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jF_AñadirUsuarioLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jText_IDUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jF_AñadirUsuarioLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnCancelar_NuevoUsu, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)))))
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+        jF_AñadirUsuarioLayout.setVerticalGroup(
+            jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_AñadirUsuarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jText_IDUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel10)
+                    .addComponent(jText_usuNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(jText_usuPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCBox_sucNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jF_AñadirUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnIngresarUsuario)
+                    .addComponent(btnCancelar_NuevoUsu))
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+
+        jF_VerUsuarios.setMinimumSize(new java.awt.Dimension(750, 300));
+
+        jLabel_listaTallas3.setText("Lista de Usuarios");
+
+        tblListaUsuarios.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "", ""
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JScrollPane13.setViewportView(tblListaUsuarios);
+
+        btnNuevoUsuario.setText("Nuevo Usuario");
+        btnNuevoUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevoUsuarioActionPerformed(evt);
+            }
+        });
+
+        btnBorrarUsuario.setText("Eliminar Usuario");
+        btnBorrarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarUsuarioActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jF_VerUsuariosLayout = new javax.swing.GroupLayout(jF_VerUsuarios.getContentPane());
+        jF_VerUsuarios.getContentPane().setLayout(jF_VerUsuariosLayout);
+        jF_VerUsuariosLayout.setHorizontalGroup(
+            jF_VerUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_VerUsuariosLayout.createSequentialGroup()
+                .addGroup(jF_VerUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jF_VerUsuariosLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addGroup(jF_VerUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnNuevoUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
+                            .addComponent(btnBorrarUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jF_VerUsuariosLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(JScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jF_VerUsuariosLayout.createSequentialGroup()
+                        .addGap(161, 161, 161)
+                        .addComponent(jLabel_listaTallas3, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+        jF_VerUsuariosLayout.setVerticalGroup(
+            jF_VerUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_VerUsuariosLayout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabel_listaTallas3)
+                .addGap(18, 18, 18)
+                .addComponent(JScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnNuevoUsuario)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrarUsuario)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1118,6 +1319,11 @@ public class Form_onlyTests extends javax.swing.JFrame {
         });
 
         btnVerUsuarios.setText("Ver Usuarios");
+        btnVerUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerUsuariosActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Ingresar Ventas");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -1129,6 +1335,8 @@ public class Form_onlyTests extends javax.swing.JFrame {
         jButton5.setText("Ver Ventas");
 
         jButton6.setText("Devoluciones");
+
+        jButton1.setText("Ver Inventario");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1143,9 +1351,6 @@ public class Form_onlyTests extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(425, 425, 425)
-                        .addComponent(btnVerUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(29, 29, 29)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1156,13 +1361,18 @@ public class Form_onlyTests extends javax.swing.JFrame {
                                 .addGap(48, 48, 48)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(btnVerCategorias, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
-                                    .addComponent(btnVerSucursales, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addComponent(btnVerSucursales, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(309, 309, 309)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(101, 101, 101)
                                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(100, 100, 100)
-                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(537, Short.MAX_VALUE))
+                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(btnVerUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(368, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1172,7 +1382,8 @@ public class Form_onlyTests extends javax.swing.JFrame {
                 .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnVerProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnVerCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnVerCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnVerUsuarios)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1787,7 +1998,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
  
             while(rsRV.next())
             { //Extrae del rs y lo añade al Modelo de Tabla     
-              tblVerSucursales.addRow(new Object[] {rsRV.getString("IDSucursal"),rsRV.getString("sucDireccion"),
+              tblVerSucursales.addRow(new Object[] {rsRV.getString("IDSucursal"),rsRV.getString("sucNombre") ,rsRV.getString("sucDireccion"),
                   rsRV.getString("sucContacto") }); 
             }  
             rsRV.close();
@@ -1799,11 +2010,12 @@ public class Form_onlyTests extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVerSucursalesActionPerformed
 
     private void btnNuevaSucursalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaSucursalActionPerformed
+        
         jF_AñadirSucursal.setVisible(true);
         jF_AñadirSucursal.setLocationRelativeTo(null);
         
         CheckConnection con = new CheckConnection();
-        String query = "SELECT COUNT(*) AS Cantidad FROM tblSucursales WHERE IDProveedor IS NOT NULL";
+        String query = "SELECT COUNT(*) AS Cantidad FROM tblSucursales WHERE IDSucursal IS NOT NULL";
         
         try{           
             ResultSet rsRV = EjecutarQuery(con, query);         
@@ -1812,12 +2024,12 @@ public class Form_onlyTests extends javax.swing.JFrame {
             { //Extrae del rs y lo añade al Modelo de Tabla     
               int cantidad = rsRV.getInt("Cantidad");
               if (cantidad > 0) {
-                  String newid = "PV" + String.format("%03d", cantidad+1);
-                  jText_IDnewProveedor.setText(newid);
+                  String newid = "SC" + String.format("%03d", cantidad+1);
+                  jText_IDnewSucursal.setText(newid);
                   System.out.println(newid);
                 } else {
-                  String newid = "PV001";
-                  jText_IDnewProveedor.setText(newid);
+                  String newid = "SC001";
+                  jText_IDnewSucursal.setText(newid);
                   System.out.println(newid);
 
                 }
@@ -1834,13 +2046,185 @@ public class Form_onlyTests extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEditarSucursalActionPerformed
 
-    private void btnIngresarProveedor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarProveedor1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnIngresarProveedor1ActionPerformed
+    private void btnIngresarSucursalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarSucursalActionPerformed
+        CheckConnection con = new CheckConnection();
+        
+        String IDSucursal;
+        String sucNombre;
+        String sucDireccion= null;
+        String sucContacto = null;
 
-    private void btnCancelar_Nuevoprov1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelar_Nuevoprov1ActionPerformed
+ 
+        try{
+              
+            IDSucursal = jText_IDnewSucursal.getText();
+            sucNombre = jText_sucNombre.getText();
+            sucDireccion = jText_sucDireccion.getText();
+            sucContacto = jText_sucContacto.getText();
+            
+            Statement st = null;
+            st = con.ObtenerConexion().createStatement();
+            st.executeUpdate("INSERT INTO tblSucursales (IDSucursal, sucNombre, sucDireccion, sucContacto )" + 
+                    " VALUES('" + IDSucursal + "', '" + sucNombre + "', '" + sucDireccion + "', '" + sucContacto + "')");
+            
+            
+            JOptionPane.showMessageDialog(null, "Se registró producto...");
+            
+            jText_IDnewSucursal.setText("");
+            jText_sucNombre.setText("");
+            jText_sucDireccion.setText("");
+            jText_sucContacto.setText("");
+            jF_AñadirSucursal.setVisible(false);
+        }
+        catch(Exception e){
+                JOptionPane.showMessageDialog(null,"No se Pudo Agregar","Mensaje",JOptionPane.CANCEL_OPTION);
+                jText_catNombre.setText("");
+        }
+    }//GEN-LAST:event_btnIngresarSucursalActionPerformed
+
+    private void btnCancelar_NuevoSucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelar_NuevoSucActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCancelar_Nuevoprov1ActionPerformed
+    }//GEN-LAST:event_btnCancelar_NuevoSucActionPerformed
+
+    private void btnIngresarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarUsuarioActionPerformed
+        CheckConnection con = new CheckConnection();
+        
+        String IDUsuario;
+        String usuNombre;
+        String usuPassword;
+        String IDSucursal = null, sucNombre;
+        
+        
+        
+        
+        try{
+              
+            IDUsuario = jText_IDUsuario.getText();
+            usuNombre = jText_usuNombre.getText();
+            usuPassword = jText_usuPassword.getText();
+            sucNombre = (String) jCBox_sucNombre.getSelectedItem();
+            
+            String query = "SELECT IDSucursal FROM tblSucursales WHERE sucNombre = '"+ sucNombre + "'";
+            ResultSet rsRV = EjecutarQuery(con, query);  
+            
+            if (rsRV.next()) {
+                IDSucursal = rsRV.getString("IDSucursal");
+            }
+            
+            rsRV.close();
+            
+            
+            Statement st = null;
+            st = con.ObtenerConexion().createStatement();
+            st.executeUpdate("INSERT INTO tblUsuarios (IDUsuario, usuNombre, usuPassword, IDSucursal )" + 
+                    " VALUES('" + IDUsuario + "', '" + usuNombre + "', '" + usuPassword + "', '" + IDSucursal + "')");
+            
+            
+            JOptionPane.showMessageDialog(null, "Se registró producto...");
+            
+            jText_IDUsuario.setText("");
+            jText_usuNombre.setText("");
+            jText_usuPassword.setText("");
+            jF_AñadirUsuario.setVisible(false);
+        }
+        catch(Exception e){
+                JOptionPane.showMessageDialog(null,"No se Pudo Agregar","Mensaje",JOptionPane.CANCEL_OPTION);
+                jText_catNombre.setText("");
+        }
+    }//GEN-LAST:event_btnIngresarUsuarioActionPerformed
+
+    private void btnCancelar_NuevoUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelar_NuevoUsuActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelar_NuevoUsuActionPerformed
+
+    private void btnNuevoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoUsuarioActionPerformed
+         
+        jF_AñadirUsuario.setVisible(true);
+        jF_AñadirUsuario.setLocationRelativeTo(null);
+        
+        CheckConnection con = new CheckConnection();
+        
+        
+        try{  
+            
+            String query = "SELECT COUNT(*) AS Cantidad FROM tblUsuarios WHERE IDUsuario IS NOT NULL";
+            ResultSet rsRV = EjecutarQuery(con, query); 
+            
+            // Crear un JComboBox 
+            String query2 = "SELECT sucNombre FROM tblSucursales";
+            ResultSet rsRV2 = EjecutarQuery(con, query2);
+            
+            List<String> nombresSucursales = new ArrayList<>();
+            
+            while (rsRV2.next()) {
+                String sucNombre = rsRV2.getString("sucNombre");
+                nombresSucursales.add(sucNombre);
+            }
+            rsRV2.close();
+            
+            // Crear un JComboBox y configurar su modelo de datos con los nombres 
+            DefaultComboBoxModel<String> comboBoxModel = new DefaultComboBoxModel<>(nombresSucursales.toArray(new String[0]));
+            jCBox_sucNombre.setModel(comboBoxModel);
+            
+            while(rsRV.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla     
+              int cantidad = rsRV.getInt("Cantidad");
+              if (cantidad > 0) {
+                  String newid = "US" + String.format("%03d", cantidad+1);
+                  jText_IDUsuario.setText(newid);
+                } else {
+                  String newid = "US001";
+                  jText_IDUsuario.setText(newid);
+
+                }
+            }    
+            rsRV.close();
+           }   
+        catch(SQLException e){
+  
+            JOptionPane.showMessageDialog(null,"Hubo un Error en Leer la DB.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_btnNuevoUsuarioActionPerformed
+
+    private void btnBorrarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBorrarUsuarioActionPerformed
+
+    private void btnVerUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerUsuariosActionPerformed
+        jF_VerUsuarios.setVisible(true);
+        jF_VerUsuarios.setLocationRelativeTo(null);
+        
+        
+        CheckConnection con = new CheckConnection();
+           try{ 
+            DefaultTableModel tblVerUsuarios = new DefaultTableModel(); //Crear Modelo de Tabla 
+            tblListaUsuarios.setModel(tblVerUsuarios);  // Asignar el Modelo de Tabla 
+ 
+            tblVerUsuarios.addColumn("IDUsuario"); //Asigna nombre a cada columna del Modelo de Tabla
+            tblVerUsuarios.addColumn("Nombre");
+            tblVerUsuarios.addColumn("Acceso");
+            tblVerUsuarios.addColumn("Sucursal");
+     
+            String query = "SELECT * FROM tblUsuarios";
+            ResultSet rsRV = EjecutarQuery(con, query);         
+ 
+            while(rsRV.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla     
+                String idsuctemp = rsRV.getString("IDSucursal");
+                
+                String sucNombre = ObtenerNombrePorID("tblSucursales", "IDSucursal", idsuctemp, con, "sucNombre");
+                
+                tblVerUsuarios.addRow(new Object[] {rsRV.getString("IDUsuario"),rsRV.getString("usuNombre") ,rsRV.getString("IDSucursal"), sucNombre
+                  }); 
+            }  
+            
+            rsRV.close();
+           }   
+        catch(SQLException e){
+  
+            JOptionPane.showMessageDialog(null,"Hubo Error en Mostrar la Tabla.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_btnVerUsuariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1880,6 +2264,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane JScrollPane10;
     private javax.swing.JScrollPane JScrollPane11;
+    private javax.swing.JScrollPane JScrollPane13;
     private javax.swing.JScrollPane JScrollPane4;
     private javax.swing.JScrollPane JScrollPane5;
     private javax.swing.JScrollPane JScrollPane6;
@@ -1890,22 +2275,26 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JButton btnBorrarProducto;
     private javax.swing.JButton btnBorrarProveedor;
     private javax.swing.JButton btnBorrarRelacion;
+    private javax.swing.JButton btnBorrarUsuario;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnCancelarCrearRelacion;
     private javax.swing.JButton btnCancelar_NuevoProd;
+    private javax.swing.JButton btnCancelar_NuevoSuc;
+    private javax.swing.JButton btnCancelar_NuevoUsu;
     private javax.swing.JButton btnCancelar_Nuevoprov;
-    private javax.swing.JButton btnCancelar_Nuevoprov1;
     private javax.swing.JButton btnCrearRelacion;
     private javax.swing.JButton btnEditarSucursal;
     private javax.swing.JButton btnEliminarRelacionSelected;
     private javax.swing.JButton btnIngresarProducto;
     private javax.swing.JButton btnIngresarProveedor;
-    private javax.swing.JButton btnIngresarProveedor1;
+    private javax.swing.JButton btnIngresarSucursal;
+    private javax.swing.JButton btnIngresarUsuario;
     private javax.swing.JButton btnNuevaCategoria;
     private javax.swing.JButton btnNuevaRelacion;
     private javax.swing.JButton btnNuevaSucursal;
     private javax.swing.JButton btnNuevoProducto;
     private javax.swing.JButton btnNuevoProveedor;
+    private javax.swing.JButton btnNuevoUsuario;
     private javax.swing.JButton btnSepararSelectedRelación;
     private javax.swing.JButton btnVerCategorias;
     private javax.swing.JButton btnVerProductos;
@@ -1914,24 +2303,31 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JButton btnVerSucursales;
     private javax.swing.JButton btnVerUsuarios;
     private javax.swing.JButton btn_IngresarCategoria;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JComboBox jCBox_catNombre;
+    private javax.swing.JComboBox jCBox_sucNombre;
     private javax.swing.JFrame jF_AñadirCategoria;
     private javax.swing.JFrame jF_AñadirProductos;
     private javax.swing.JFrame jF_AñadirProveedores;
     private javax.swing.JFrame jF_AñadirSucursal;
+    private javax.swing.JFrame jF_AñadirUsuario;
     private javax.swing.JFrame jF_NuevaRelacion;
     private javax.swing.JFrame jF_VerCategorias;
     private javax.swing.JFrame jF_VerProductos;
     private javax.swing.JFrame jF_VerProvee;
     private javax.swing.JFrame jF_VerProveedores;
     private javax.swing.JFrame jF_VerSucursales;
+    private javax.swing.JFrame jF_VerUsuarios;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -1945,18 +2341,22 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel_listaProveedores;
     private javax.swing.JLabel jLabel_listaSucursales;
     private javax.swing.JLabel jLabel_listaTallas;
     private javax.swing.JLabel jLabel_listaTallas1;
+    private javax.swing.JLabel jLabel_listaTallas3;
     private javax.swing.JLabel jLabel_listaprovee;
     private javax.swing.JLabel jLabel_listaprovee1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jText_IDCategoria;
     private javax.swing.JTextField jText_IDProducto;
+    private javax.swing.JTextField jText_IDUsuario;
     private javax.swing.JTextField jText_IDnewProveedor;
     private javax.swing.JTextField jText_IDnewSucursal;
     private javax.swing.JTextField jText_catNombre;
@@ -1969,6 +2369,8 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JTextField jText_sucContacto;
     private javax.swing.JTextField jText_sucDireccion;
     private javax.swing.JTextField jText_sucNombre;
+    private javax.swing.JTextField jText_usuNombre;
+    private javax.swing.JTextField jText_usuPassword;
     private javax.swing.JTable tblListaCategorias;
     private javax.swing.JTable tblListaProductos;
     private javax.swing.JTable tblListaProvee;
@@ -1977,5 +2379,6 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JTable tblListaSelectProvee;
     private javax.swing.JTable tblListaSelectedRelacion;
     private javax.swing.JTable tblListaSucursales;
+    private javax.swing.JTable tblListaUsuarios;
     // End of variables declaration//GEN-END:variables
 }
