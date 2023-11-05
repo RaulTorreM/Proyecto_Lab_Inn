@@ -81,6 +81,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
         tblListaProveedores = new javax.swing.JTable();
         btnNuevoProveedor = new javax.swing.JButton();
         btnBorrarProveedor = new javax.swing.JButton();
+        btnVerRelaciones = new javax.swing.JButton();
         jF_AñadirProveedores = new javax.swing.JFrame();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -93,6 +94,42 @@ public class Form_onlyTests extends javax.swing.JFrame {
         jText_provNotas = new javax.swing.JTextField();
         btnIngresarProveedor = new javax.swing.JButton();
         btnCancelar_Nuevoprov = new javax.swing.JButton();
+        jF_VerProvee = new javax.swing.JFrame();
+        jLabel_listaprovee = new javax.swing.JLabel();
+        JScrollPane7 = new javax.swing.JScrollPane();
+        tblListaProvee = new javax.swing.JTable();
+        btnNuevaRelacion = new javax.swing.JButton();
+        btnBorrarRelacion = new javax.swing.JButton();
+        jF_NuevaRelacion = new javax.swing.JFrame();
+        jLabel_listaprovee1 = new javax.swing.JLabel();
+        JScrollPane8 = new javax.swing.JScrollPane();
+        tblListaSelectProvee = new javax.swing.JTable();
+        btnSepararSelectedRelación = new javax.swing.JButton();
+        btnEliminarRelacionSelected = new javax.swing.JButton();
+        JScrollPane9 = new javax.swing.JScrollPane();
+        tblListaSelectProducto = new javax.swing.JTable();
+        JScrollPane10 = new javax.swing.JScrollPane();
+        tblListaSelectedRelacion = new javax.swing.JTable();
+        btnCrearRelacion = new javax.swing.JButton();
+        btnCancelarCrearRelacion = new javax.swing.JButton();
+        jF_VerSucursales = new javax.swing.JFrame();
+        jLabel_listaSucursales = new javax.swing.JLabel();
+        JScrollPane11 = new javax.swing.JScrollPane();
+        tblListaSucursales = new javax.swing.JTable();
+        btnNuevaSucursal = new javax.swing.JButton();
+        btnEditarSucursal = new javax.swing.JButton();
+        jF_AñadirSucursal = new javax.swing.JFrame();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jText_IDnewSucursal = new javax.swing.JTextField();
+        jText_sucNombre = new javax.swing.JTextField();
+        jText_sucDireccion = new javax.swing.JTextField();
+        jText_sucContacto = new javax.swing.JTextField();
+        btnIngresarProveedor1 = new javax.swing.JButton();
+        btnCancelar_Nuevoprov1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         btnVerProductos = new javax.swing.JButton();
@@ -482,6 +519,13 @@ public class Form_onlyTests extends javax.swing.JFrame {
             }
         });
 
+        btnVerRelaciones.setText("Relacionar Con Productos");
+        btnVerRelaciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerRelacionesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jF_VerProveedoresLayout = new javax.swing.GroupLayout(jF_VerProveedores.getContentPane());
         jF_VerProveedores.getContentPane().setLayout(jF_VerProveedoresLayout);
         jF_VerProveedoresLayout.setHorizontalGroup(
@@ -490,13 +534,16 @@ public class Form_onlyTests extends javax.swing.JFrame {
                 .addGroup(jF_VerProveedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jF_VerProveedoresLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jF_VerProveedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jF_VerProveedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(JScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 717, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jF_VerProveedoresLayout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addGroup(jF_VerProveedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(btnNuevoProveedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnBorrarProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(JScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 717, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(btnBorrarProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnVerRelaciones)
+                                .addGap(8, 8, 8))))
                     .addGroup(jF_VerProveedoresLayout.createSequentialGroup()
                         .addGap(292, 292, 292)
                         .addComponent(jLabel_listaProveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -510,7 +557,9 @@ public class Form_onlyTests extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(JScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnNuevoProveedor)
+                .addGroup(jF_VerProveedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnNuevoProveedor)
+                    .addComponent(btnVerRelaciones))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnBorrarProveedor)
                 .addContainerGap(19, Short.MAX_VALUE))
@@ -632,6 +681,408 @@ public class Form_onlyTests extends javax.swing.JFrame {
                         .addGap(28, 28, 28))))
         );
 
+        jF_VerProvee.setMinimumSize(new java.awt.Dimension(750, 300));
+
+        jLabel_listaprovee.setText("Relación de Proveedores - Productos");
+
+        tblListaProvee.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "", ""
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JScrollPane7.setViewportView(tblListaProvee);
+
+        btnNuevaRelacion.setText("Nueva Relación");
+        btnNuevaRelacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevaRelacionActionPerformed(evt);
+            }
+        });
+
+        btnBorrarRelacion.setText("Eliminar Relación");
+        btnBorrarRelacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarRelacionActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jF_VerProveeLayout = new javax.swing.GroupLayout(jF_VerProvee.getContentPane());
+        jF_VerProvee.getContentPane().setLayout(jF_VerProveeLayout);
+        jF_VerProveeLayout.setHorizontalGroup(
+            jF_VerProveeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_VerProveeLayout.createSequentialGroup()
+                .addGroup(jF_VerProveeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jF_VerProveeLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(btnBorrarRelacion, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jF_VerProveeLayout.createSequentialGroup()
+                        .addGap(109, 109, 109)
+                        .addComponent(jLabel_listaprovee))
+                    .addGroup(jF_VerProveeLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jF_VerProveeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jF_VerProveeLayout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(btnNuevaRelacion, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(JScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+        jF_VerProveeLayout.setVerticalGroup(
+            jF_VerProveeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_VerProveeLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel_listaprovee)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnNuevaRelacion)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrarRelacion)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+
+        jF_NuevaRelacion.setMinimumSize(new java.awt.Dimension(900, 500));
+
+        jLabel_listaprovee1.setText("Seleccione las Nuevas Relaciones");
+
+        tblListaSelectProvee.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "", ""
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JScrollPane8.setViewportView(tblListaSelectProvee);
+
+        btnSepararSelectedRelación.setText("Añadir Relación");
+        btnSepararSelectedRelación.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSepararSelectedRelaciónActionPerformed(evt);
+            }
+        });
+
+        btnEliminarRelacionSelected.setText("Eliminar Relación");
+        btnEliminarRelacionSelected.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarRelacionSelectedActionPerformed(evt);
+            }
+        });
+
+        tblListaSelectProducto.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "", ""
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JScrollPane9.setViewportView(tblListaSelectProducto);
+
+        tblListaSelectedRelacion.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "IDProveedor", "Proveedor", "IDproducto", "Producto"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JScrollPane10.setViewportView(tblListaSelectedRelacion);
+
+        btnCrearRelacion.setText("Crear Relaciones");
+        btnCrearRelacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrearRelacionActionPerformed(evt);
+            }
+        });
+
+        btnCancelarCrearRelacion.setText("Cancelar");
+        btnCancelarCrearRelacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarCrearRelacionActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jF_NuevaRelacionLayout = new javax.swing.GroupLayout(jF_NuevaRelacion.getContentPane());
+        jF_NuevaRelacion.getContentPane().setLayout(jF_NuevaRelacionLayout);
+        jF_NuevaRelacionLayout.setHorizontalGroup(
+            jF_NuevaRelacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_NuevaRelacionLayout.createSequentialGroup()
+                .addGroup(jF_NuevaRelacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jF_NuevaRelacionLayout.createSequentialGroup()
+                        .addGap(368, 368, 368)
+                        .addComponent(jLabel_listaprovee1))
+                    .addGroup(jF_NuevaRelacionLayout.createSequentialGroup()
+                        .addGap(273, 273, 273)
+                        .addComponent(btnSepararSelectedRelación, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(64, 64, 64)
+                        .addComponent(btnEliminarRelacionSelected, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jF_NuevaRelacionLayout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addGroup(jF_NuevaRelacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jF_NuevaRelacionLayout.createSequentialGroup()
+                                .addGroup(jF_NuevaRelacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnCrearRelacion, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCancelarCrearRelacion, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(31, 31, 31)
+                                .addComponent(JScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jF_NuevaRelacionLayout.createSequentialGroup()
+                                .addComponent(JScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(57, 57, 57)
+                                .addComponent(JScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
+        jF_NuevaRelacionLayout.setVerticalGroup(
+            jF_NuevaRelacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_NuevaRelacionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel_listaprovee1)
+                .addGap(35, 35, 35)
+                .addGroup(jF_NuevaRelacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(JScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+                    .addComponent(JScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGroup(jF_NuevaRelacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSepararSelectedRelación)
+                    .addComponent(btnEliminarRelacionSelected))
+                .addGroup(jF_NuevaRelacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jF_NuevaRelacionLayout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(btnCrearRelacion)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCancelarCrearRelacion))
+                    .addGroup(jF_NuevaRelacionLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(JScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(36, 36, 36))
+        );
+
+        jF_VerSucursales.setMinimumSize(new java.awt.Dimension(750, 300));
+
+        jLabel_listaSucursales.setText("Lista de Sucursales");
+
+        tblListaSucursales.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "", "", "", ""
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JScrollPane11.setViewportView(tblListaSucursales);
+
+        btnNuevaSucursal.setText("Nueva Sucursal");
+        btnNuevaSucursal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevaSucursalActionPerformed(evt);
+            }
+        });
+
+        btnEditarSucursal.setText("Editar Sucursal");
+        btnEditarSucursal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditarSucursalActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jF_VerSucursalesLayout = new javax.swing.GroupLayout(jF_VerSucursales.getContentPane());
+        jF_VerSucursales.getContentPane().setLayout(jF_VerSucursalesLayout);
+        jF_VerSucursalesLayout.setHorizontalGroup(
+            jF_VerSucursalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_VerSucursalesLayout.createSequentialGroup()
+                .addGroup(jF_VerSucursalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jF_VerSucursalesLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jF_VerSucursalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(JScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 717, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jF_VerSucursalesLayout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(jF_VerSucursalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btnNuevaSucursal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btnEditarSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(8, 8, 8))))
+                    .addGroup(jF_VerSucursalesLayout.createSequentialGroup()
+                        .addGap(292, 292, 292)
+                        .addComponent(jLabel_listaSucursales, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+        jF_VerSucursalesLayout.setVerticalGroup(
+            jF_VerSucursalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_VerSucursalesLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel_listaSucursales)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(JScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnNuevaSucursal)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnEditarSucursal)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+
+        jF_AñadirSucursal.setMinimumSize(new java.awt.Dimension(580, 270));
+
+        jLabel21.setText("Añadir Nueva Sucursal");
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel23.setText("ID Sucursal:");
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel24.setText("Nombre:");
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel25.setText("Contacto (Cel o Email):");
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel26.setText("Dirección : ");
+
+        jText_IDnewSucursal.setEditable(false);
+        jText_IDnewSucursal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jText_sucNombre.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jText_sucDireccion.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jText_sucContacto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        btnIngresarProveedor1.setText("Añadir");
+        btnIngresarProveedor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarProveedor1ActionPerformed(evt);
+            }
+        });
+
+        btnCancelar_Nuevoprov1.setText("Cancelar");
+        btnCancelar_Nuevoprov1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelar_Nuevoprov1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jF_AñadirSucursalLayout = new javax.swing.GroupLayout(jF_AñadirSucursal.getContentPane());
+        jF_AñadirSucursal.getContentPane().setLayout(jF_AñadirSucursalLayout);
+        jF_AñadirSucursalLayout.setHorizontalGroup(
+            jF_AñadirSucursalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_AñadirSucursalLayout.createSequentialGroup()
+                .addGroup(jF_AñadirSucursalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jF_AñadirSucursalLayout.createSequentialGroup()
+                        .addGap(320, 320, 320)
+                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jText_IDnewSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jF_AñadirSucursalLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jF_AñadirSucursalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jF_AñadirSucursalLayout.createSequentialGroup()
+                                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jText_sucNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jF_AñadirSucursalLayout.createSequentialGroup()
+                                .addComponent(jLabel26)
+                                .addGap(18, 18, 18)
+                                .addComponent(jText_sucDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jF_AñadirSucursalLayout.createSequentialGroup()
+                                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jText_sucContacto, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jF_AñadirSucursalLayout.createSequentialGroup()
+                        .addGap(205, 205, 205)
+                        .addComponent(jLabel21)))
+                .addContainerGap(42, Short.MAX_VALUE))
+            .addGroup(jF_AñadirSucursalLayout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addComponent(btnIngresarProveedor1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCancelar_Nuevoprov1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(67, 67, 67))
+        );
+        jF_AñadirSucursalLayout.setVerticalGroup(
+            jF_AñadirSucursalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_AñadirSucursalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jF_AñadirSucursalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(jText_IDnewSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jF_AñadirSucursalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jText_sucNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jF_AñadirSucursalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jText_sucDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jF_AñadirSucursalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jText_sucContacto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel25))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                .addGroup(jF_AñadirSucursalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnIngresarProveedor1)
+                    .addComponent(btnCancelar_Nuevoprov1))
+                .addGap(46, 46, 46))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Solo Tests");
@@ -660,6 +1111,11 @@ public class Form_onlyTests extends javax.swing.JFrame {
         });
 
         btnVerSucursales.setText("Ver Sucursales");
+        btnVerSucursales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerSucursalesActionPerformed(evt);
+            }
+        });
 
         btnVerUsuarios.setText("Ver Usuarios");
 
@@ -776,6 +1232,22 @@ public class Form_onlyTests extends javax.swing.JFrame {
         ResultSet rsRV = pstm.executeQuery();
         return rsRV;
     }
+        // Función para obtener el nombre por ID desde una tabla
+    private String ObtenerNombrePorID(String tabla, String columnaID, String id, CheckConnection con,String NombreColumna) {
+        try {
+            String query = "SELECT * FROM " + tabla + " WHERE " + columnaID + " = '" + id + "'";
+            ResultSet rs = EjecutarQuery(con, query);
+
+            if (rs.next()) {
+                return rs.getString(NombreColumna); // Reemplaza con el nombre real de la columna
+            } else {
+                return "Nombre No Encontrado";
+            }
+        } catch (SQLException e) {
+            return "Error";
+        }
+    }
+
 
     private void btnBorrarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarProductoActionPerformed
         // TODO add your handling code here:
@@ -1094,6 +1566,282 @@ public class Form_onlyTests extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCancelar_NuevoprovActionPerformed
 
+    private void btnNuevaRelacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaRelacionActionPerformed
+        jF_NuevaRelacion.setVisible(true);
+        jF_NuevaRelacion.setLocationRelativeTo(null);
+        
+        
+        CheckConnection con = new CheckConnection();
+           try{ 
+            DefaultTableModel tblVerProveedores = new DefaultTableModel(); //Crear Modelo de Tabla 
+            tblListaSelectProvee.setModel(tblVerProveedores);  // Asignar el Modelo de Tabla 
+ 
+            tblVerProveedores.addColumn("IDProveedor"); //Asigna nombre a cada columna del Modelo de Tabla
+            tblVerProveedores.addColumn("Nombre");
+            tblVerProveedores.addColumn("Nota");
+     
+            String query = "SELECT * FROM tblProveedores";
+                        
+            ResultSet rsRV = EjecutarQuery(con, query);         
+ 
+            while(rsRV.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla     
+              tblVerProveedores.addRow(new Object[] {rsRV.getString("IDProveedor"),rsRV.getString("provNombre")
+                  ,rsRV.getString("provNotas") }); 
+            }  
+            rsRV.close();
+           }   
+        catch(SQLException e){
+  
+            JOptionPane.showMessageDialog(null,"Hubo Error en Mostrar la Tabla.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+           try{ 
+            DefaultTableModel tblVerProductos = new DefaultTableModel(); //Crear Modelo de Tabla
+            tblListaSelectProducto.setModel(tblVerProductos);  // Asignar el Modelo de Tabla 
+ 
+            tblVerProductos.addColumn("IDProducto"); //Asigna nombre a cada columna del Modelo de Tabla
+            tblVerProductos.addColumn("Nombre");
+            tblVerProductos.addColumn("Precio");
+            tblVerProductos.addColumn("Categoría");
+            tblVerProductos.addColumn("Talla");
+
+     
+            String query = "SELECT * FROM tblProductos";
+                        
+            ResultSet rsRV = EjecutarQuery(con, query);    
+
+ 
+            while(rsRV.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla     
+              tblVerProductos.addRow(new Object[] {rsRV.getString("IDProducto"),rsRV.getString("proNombre"),rsRV.getString("proPrecio"), 
+                  rsRV.getString("IDCategoria"),rsRV.getString("proTalla") }); 
+            }  
+            rsRV.close();
+           }   
+        catch(SQLException e){
+  
+            JOptionPane.showMessageDialog(null,"No existen Productos existentes.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+            
+    }//GEN-LAST:event_btnNuevaRelacionActionPerformed
+
+    private void btnBorrarRelacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarRelacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBorrarRelacionActionPerformed
+
+    private void btnVerRelacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerRelacionesActionPerformed
+        jF_VerProvee.setVisible(true);
+        jF_VerProvee.setLocationRelativeTo(null);
+
+        CheckConnection con = new CheckConnection();
+        DefaultTableModel tblVerProvee = new DefaultTableModel();
+
+        try {
+            tblListaProvee.setModel(tblVerProvee);
+
+            tblVerProvee.addColumn("IDProveedor");
+            tblVerProvee.addColumn("Proveedor");
+            tblVerProvee.addColumn("IDProducto");
+            tblVerProvee.addColumn("Producto");
+
+            String query = "SELECT * FROM tblProvee";
+            ResultSet rsRV = EjecutarQuery(con, query);
+
+            while (rsRV.next()) {
+                String idprovtemp = rsRV.getString("IDProveedor");
+                String idprodtemp = rsRV.getString("IDProducto");
+
+                String provNombre = ObtenerNombrePorID("tblProveedores", "IDProveedor", idprovtemp, con, "provNombre");
+                String proNombre = ObtenerNombrePorID("tblProductos", "IDProducto", idprodtemp, con, "proNombre");
+
+                tblVerProvee.addRow(new Object[] { rsRV.getString("IDProveedor"), provNombre, rsRV.getString("IDProducto"), proNombre });
+            }
+
+            rsRV.close();
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Hubo un error al mostrar la tabla.", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+        }
+
+
+
+
+    }//GEN-LAST:event_btnVerRelacionesActionPerformed
+
+    private void btnSepararSelectedRelaciónActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSepararSelectedRelaciónActionPerformed
+        CheckConnection con = new CheckConnection();
+        
+        int filaSeleccionadaProveedor = tblListaSelectProvee.getSelectedRow();
+        int filaSeleccionadaProducto = tblListaSelectProducto.getSelectedRow();
+        
+        
+        try
+        {
+           if (filaSeleccionadaProveedor == -1 && filaSeleccionadaProducto == -1) //para validar que se seleccione fila
+               JOptionPane.showMessageDialog(null, "Debe Seleccionar un Proveedor y un Producto Minimo");
+           else
+           {
+               if (filaSeleccionadaProveedor != -1 && filaSeleccionadaProducto == -1)
+                   JOptionPane.showMessageDialog(null, "Debe Seleccionar el Producto a Relacionar");
+               if (filaSeleccionadaProveedor == -1 && filaSeleccionadaProducto != -1)
+                   JOptionPane.showMessageDialog(null, "Debe Seleccionar el Proveedor a Relacionar");
+               if (filaSeleccionadaProveedor != -1 && filaSeleccionadaProducto != -1)
+               {
+                    DefaultTableModel dtReporte = (DefaultTableModel)tblListaSelectedRelacion.getModel(); // Crea un Modelo de Tabla y asigna a un jTable
+
+                    String IDProveedor = tblListaSelectProvee.getValueAt(filaSeleccionadaProveedor, 0).toString();
+                    String IDProducto  = tblListaSelectProducto.getValueAt(filaSeleccionadaProducto, 0).toString();
+                    String provNombre  = tblListaSelectProvee.getValueAt(filaSeleccionadaProveedor, 1).toString();
+                    String proNombre  = tblListaSelectProducto.getValueAt(filaSeleccionadaProducto, 1).toString();
+                    
+                    
+                    Object[] rowData = {IDProveedor,provNombre,IDProducto,proNombre};
+                    boolean filaDuplicada = false;
+                    for (int i = 0; i < dtReporte.getRowCount(); i++) {
+                        boolean igual = true;
+                        for (int j = 0; j < dtReporte.getColumnCount(); j++) {
+                            if (!rowData[j].equals(dtReporte.getValueAt(i, j))) {
+                                igual = false;
+                                break;
+                            }
+                        }
+                        if (igual) {
+                            filaDuplicada = true;
+                            break;
+                        }
+                    }
+
+                    if (!filaDuplicada) {
+                        // No existe una fila igual, entonces puedes insertar la nueva fila
+                        dtReporte.addRow(new Object[]{IDProveedor,provNombre,IDProducto,proNombre});
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Ya Está Seleccionado Esta Relación");
+                    }
+                    
+                    
+               }
+           }
+        }
+        catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(null, "Hubo un Error Al Seleccionar Datos");
+        }
+    }//GEN-LAST:event_btnSepararSelectedRelaciónActionPerformed
+
+    private void btnEliminarRelacionSelectedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarRelacionSelectedActionPerformed
+        CheckConnection con = new CheckConnection();
+        
+        int filaSeleccionada  = tblListaSelectedRelacion.getSelectedRow();
+        DefaultTableModel modelo = (DefaultTableModel) tblListaSelectedRelacion.getModel();
+        modelo.removeRow(filaSeleccionada);
+    }//GEN-LAST:event_btnEliminarRelacionSelectedActionPerformed
+
+    private void btnCrearRelacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearRelacionActionPerformed
+        CheckConnection con = new CheckConnection();
+        
+
+        try{
+              
+            for(int i=0;i<tblListaSelectedRelacion.getRowCount();i++)
+            {
+                String IDProveedor = tblListaSelectedRelacion.getValueAt(i, 0).toString();
+                String IDProducto = tblListaSelectedRelacion.getValueAt(i, 2).toString();
+                
+                Statement stDetalle = null;
+                stDetalle = con.ObtenerConexion().createStatement();
+                stDetalle.executeUpdate("INSERT INTO tblProvee(IDProveedor, IDProducto)" + 
+                            "values('"+ IDProveedor +"' , '"+ IDProducto +"')");
+                    
+                    
+                
+            }
+            JOptionPane.showMessageDialog(null, "Se registro correctamente las Relaciones...\n");
+        }
+        catch(Exception e){
+                JOptionPane.showMessageDialog(null,"No se Pudo Agregar","Mensaje",JOptionPane.CANCEL_OPTION);
+                jText_catNombre.setText("");
+        }
+    }//GEN-LAST:event_btnCrearRelacionActionPerformed
+
+    private void btnCancelarCrearRelacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarCrearRelacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarCrearRelacionActionPerformed
+
+    private void btnVerSucursalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerSucursalesActionPerformed
+        jF_VerSucursales.setVisible(true);
+        jF_VerSucursales.setLocationRelativeTo(null);
+        
+        
+        CheckConnection con = new CheckConnection();
+           try{ 
+            DefaultTableModel tblVerSucursales = new DefaultTableModel(); //Crear Modelo de Tabla 
+            tblListaSucursales.setModel(tblVerSucursales);  // Asignar el Modelo de Tabla 
+ 
+            tblVerSucursales.addColumn("IDSucursal"); //Asigna nombre a cada columna del Modelo de Tabla
+            tblVerSucursales.addColumn("Nombre");
+            tblVerSucursales.addColumn("Dirección");
+            tblVerSucursales.addColumn("Contacto");
+     
+            String query = "SELECT * FROM tblSucursales";
+            ResultSet rsRV = EjecutarQuery(con, query);         
+ 
+            while(rsRV.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla     
+              tblVerSucursales.addRow(new Object[] {rsRV.getString("IDSucursal"),rsRV.getString("sucDireccion"),
+                  rsRV.getString("sucContacto") }); 
+            }  
+            rsRV.close();
+           }   
+        catch(SQLException e){
+  
+            JOptionPane.showMessageDialog(null,"Hubo Error en Mostrar la Tabla.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_btnVerSucursalesActionPerformed
+
+    private void btnNuevaSucursalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaSucursalActionPerformed
+        jF_AñadirSucursal.setVisible(true);
+        jF_AñadirSucursal.setLocationRelativeTo(null);
+        
+        CheckConnection con = new CheckConnection();
+        String query = "SELECT COUNT(*) AS Cantidad FROM tblSucursales WHERE IDProveedor IS NOT NULL";
+        
+        try{           
+            ResultSet rsRV = EjecutarQuery(con, query);         
+ 
+            while(rsRV.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla     
+              int cantidad = rsRV.getInt("Cantidad");
+              if (cantidad > 0) {
+                  String newid = "PV" + String.format("%03d", cantidad+1);
+                  jText_IDnewProveedor.setText(newid);
+                  System.out.println(newid);
+                } else {
+                  String newid = "PV001";
+                  jText_IDnewProveedor.setText(newid);
+                  System.out.println(newid);
+
+                }
+            }  
+            rsRV.close();
+           }   
+        catch(SQLException e){
+  
+            JOptionPane.showMessageDialog(null,"Hubo un Error en Leer la DB.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_btnNuevaSucursalActionPerformed
+
+    private void btnEditarSucursalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarSucursalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditarSucursalActionPerformed
+
+    private void btnIngresarProveedor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarProveedor1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnIngresarProveedor1ActionPerformed
+
+    private void btnCancelar_Nuevoprov1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelar_Nuevoprov1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelar_Nuevoprov1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1130,23 +1878,39 @@ public class Form_onlyTests extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane JScrollPane10;
+    private javax.swing.JScrollPane JScrollPane11;
     private javax.swing.JScrollPane JScrollPane4;
     private javax.swing.JScrollPane JScrollPane5;
     private javax.swing.JScrollPane JScrollPane6;
+    private javax.swing.JScrollPane JScrollPane7;
+    private javax.swing.JScrollPane JScrollPane8;
+    private javax.swing.JScrollPane JScrollPane9;
     private javax.swing.JButton btnBorrarCategoria;
     private javax.swing.JButton btnBorrarProducto;
     private javax.swing.JButton btnBorrarProveedor;
+    private javax.swing.JButton btnBorrarRelacion;
     private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnCancelarCrearRelacion;
     private javax.swing.JButton btnCancelar_NuevoProd;
     private javax.swing.JButton btnCancelar_Nuevoprov;
+    private javax.swing.JButton btnCancelar_Nuevoprov1;
+    private javax.swing.JButton btnCrearRelacion;
+    private javax.swing.JButton btnEditarSucursal;
+    private javax.swing.JButton btnEliminarRelacionSelected;
     private javax.swing.JButton btnIngresarProducto;
     private javax.swing.JButton btnIngresarProveedor;
+    private javax.swing.JButton btnIngresarProveedor1;
     private javax.swing.JButton btnNuevaCategoria;
+    private javax.swing.JButton btnNuevaRelacion;
+    private javax.swing.JButton btnNuevaSucursal;
     private javax.swing.JButton btnNuevoProducto;
     private javax.swing.JButton btnNuevoProveedor;
+    private javax.swing.JButton btnSepararSelectedRelación;
     private javax.swing.JButton btnVerCategorias;
     private javax.swing.JButton btnVerProductos;
     private javax.swing.JButton btnVerProveedores;
+    private javax.swing.JButton btnVerRelaciones;
     private javax.swing.JButton btnVerSucursales;
     private javax.swing.JButton btnVerUsuarios;
     private javax.swing.JButton btn_IngresarCategoria;
@@ -1157,9 +1921,13 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JFrame jF_AñadirCategoria;
     private javax.swing.JFrame jF_AñadirProductos;
     private javax.swing.JFrame jF_AñadirProveedores;
+    private javax.swing.JFrame jF_AñadirSucursal;
+    private javax.swing.JFrame jF_NuevaRelacion;
     private javax.swing.JFrame jF_VerCategorias;
     private javax.swing.JFrame jF_VerProductos;
+    private javax.swing.JFrame jF_VerProvee;
     private javax.swing.JFrame jF_VerProveedores;
+    private javax.swing.JFrame jF_VerSucursales;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -1169,19 +1937,28 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel_listaProveedores;
+    private javax.swing.JLabel jLabel_listaSucursales;
     private javax.swing.JLabel jLabel_listaTallas;
     private javax.swing.JLabel jLabel_listaTallas1;
+    private javax.swing.JLabel jLabel_listaprovee;
+    private javax.swing.JLabel jLabel_listaprovee1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jText_IDCategoria;
     private javax.swing.JTextField jText_IDProducto;
     private javax.swing.JTextField jText_IDnewProveedor;
+    private javax.swing.JTextField jText_IDnewSucursal;
     private javax.swing.JTextField jText_catNombre;
     private javax.swing.JTextField jText_proNombre;
     private javax.swing.JTextField jText_proPrecio;
@@ -1189,8 +1966,16 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JTextField jText_provContacto;
     private javax.swing.JTextField jText_provNombre;
     private javax.swing.JTextField jText_provNotas;
+    private javax.swing.JTextField jText_sucContacto;
+    private javax.swing.JTextField jText_sucDireccion;
+    private javax.swing.JTextField jText_sucNombre;
     private javax.swing.JTable tblListaCategorias;
     private javax.swing.JTable tblListaProductos;
+    private javax.swing.JTable tblListaProvee;
     private javax.swing.JTable tblListaProveedores;
+    private javax.swing.JTable tblListaSelectProducto;
+    private javax.swing.JTable tblListaSelectProvee;
+    private javax.swing.JTable tblListaSelectedRelacion;
+    private javax.swing.JTable tblListaSucursales;
     // End of variables declaration//GEN-END:variables
 }
