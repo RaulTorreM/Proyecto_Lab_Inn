@@ -148,6 +148,26 @@ public class Form_onlyTests extends javax.swing.JFrame {
         tblListaUsuarios = new javax.swing.JTable();
         btnNuevoUsuario = new javax.swing.JButton();
         btnBorrarUsuario = new javax.swing.JButton();
+        jF_VerInventario = new javax.swing.JFrame();
+        jLabel_listaprovee2 = new javax.swing.JLabel();
+        JScrollPane12 = new javax.swing.JScrollPane();
+        tblListaInventario = new javax.swing.JTable();
+        btnNuevoInventario = new javax.swing.JButton();
+        btnBorrarInventario = new javax.swing.JButton();
+        jF_NuevoInventario = new javax.swing.JFrame();
+        jLabel_listaprovee3 = new javax.swing.JLabel();
+        JScrollPane14 = new javax.swing.JScrollPane();
+        tblListaSelectProductos = new javax.swing.JTable();
+        btnSepararSelectedInventario = new javax.swing.JButton();
+        btnEliminarInventarioSelected = new javax.swing.JButton();
+        JScrollPane15 = new javax.swing.JScrollPane();
+        tblListaSelectSucursal = new javax.swing.JTable();
+        JScrollPane16 = new javax.swing.JScrollPane();
+        tblListaSelectedInventario = new javax.swing.JTable();
+        btnCrearInventario = new javax.swing.JButton();
+        btnCancelarCrearInventario = new javax.swing.JButton();
+        jText_CantidadStock = new javax.swing.JTextField();
+        jLabel_listaprovee4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         btnVerProductos = new javax.swing.JButton();
@@ -158,7 +178,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btn_VerInventario = new javax.swing.JButton();
 
         jF_VerProductos.setMinimumSize(new java.awt.Dimension(750, 300));
 
@@ -1284,6 +1304,235 @@ public class Form_onlyTests extends javax.swing.JFrame {
                 .addContainerGap(19, Short.MAX_VALUE))
         );
 
+        jF_VerInventario.setMinimumSize(new java.awt.Dimension(750, 300));
+
+        jLabel_listaprovee2.setText("Lista de Inventario");
+
+        tblListaInventario.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "", "", ""
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JScrollPane12.setViewportView(tblListaInventario);
+
+        btnNuevoInventario.setText("Ingresar Inventario");
+        btnNuevoInventario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevoInventarioActionPerformed(evt);
+            }
+        });
+
+        btnBorrarInventario.setText("Borrar Inventario");
+        btnBorrarInventario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarInventarioActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jF_VerInventarioLayout = new javax.swing.GroupLayout(jF_VerInventario.getContentPane());
+        jF_VerInventario.getContentPane().setLayout(jF_VerInventarioLayout);
+        jF_VerInventarioLayout.setHorizontalGroup(
+            jF_VerInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_VerInventarioLayout.createSequentialGroup()
+                .addGroup(jF_VerInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jF_VerInventarioLayout.createSequentialGroup()
+                        .addGap(158, 158, 158)
+                        .addComponent(jLabel_listaprovee2))
+                    .addGroup(jF_VerInventarioLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jF_VerInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(JScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jF_VerInventarioLayout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(jF_VerInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btnBorrarInventario, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnNuevoInventario))))))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+        jF_VerInventarioLayout.setVerticalGroup(
+            jF_VerInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_VerInventarioLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel_listaprovee2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnNuevoInventario)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnBorrarInventario)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+
+        jF_NuevoInventario.setMinimumSize(new java.awt.Dimension(900, 500));
+
+        jLabel_listaprovee3.setText("Seleccione Para Agregar Inventario");
+
+        tblListaSelectProductos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "", ""
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JScrollPane14.setViewportView(tblListaSelectProductos);
+
+        btnSepararSelectedInventario.setText("Añadir Inventario");
+        btnSepararSelectedInventario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSepararSelectedInventarioActionPerformed(evt);
+            }
+        });
+
+        btnEliminarInventarioSelected.setText("Eliminar Selección");
+        btnEliminarInventarioSelected.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarInventarioSelectedActionPerformed(evt);
+            }
+        });
+
+        tblListaSelectSucursal.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "", ""
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JScrollPane15.setViewportView(tblListaSelectSucursal);
+
+        tblListaSelectedInventario.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "IDProducto", "Producto", "IDSucursal", "Sucursal", "Stock"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JScrollPane16.setViewportView(tblListaSelectedInventario);
+
+        btnCrearInventario.setText("Crear Inventario");
+        btnCrearInventario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrearInventarioActionPerformed(evt);
+            }
+        });
+
+        btnCancelarCrearInventario.setText("Cancelar");
+        btnCancelarCrearInventario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarCrearInventarioActionPerformed(evt);
+            }
+        });
+
+        jLabel_listaprovee4.setText("Ingresa Cantidad de Stock");
+
+        javax.swing.GroupLayout jF_NuevoInventarioLayout = new javax.swing.GroupLayout(jF_NuevoInventario.getContentPane());
+        jF_NuevoInventario.getContentPane().setLayout(jF_NuevoInventarioLayout);
+        jF_NuevoInventarioLayout.setHorizontalGroup(
+            jF_NuevoInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_NuevoInventarioLayout.createSequentialGroup()
+                .addGroup(jF_NuevoInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jF_NuevoInventarioLayout.createSequentialGroup()
+                        .addGap(368, 368, 368)
+                        .addComponent(jLabel_listaprovee3))
+                    .addGroup(jF_NuevoInventarioLayout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addGroup(jF_NuevoInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jF_NuevoInventarioLayout.createSequentialGroup()
+                                .addComponent(JScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(57, 57, 57)
+                                .addComponent(JScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jF_NuevoInventarioLayout.createSequentialGroup()
+                                .addGroup(jF_NuevoInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnCrearInventario, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCancelarCrearInventario, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(31, 31, 31)
+                                .addComponent(JScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jF_NuevoInventarioLayout.createSequentialGroup()
+                                .addGap(89, 89, 89)
+                                .addComponent(jText_CantidadStock, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnSepararSelectedInventario, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(64, 64, 64)
+                                .addComponent(btnEliminarInventarioSelected, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jF_NuevoInventarioLayout.createSequentialGroup()
+                                .addGap(65, 65, 65)
+                                .addComponent(jLabel_listaprovee4, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
+        jF_NuevoInventarioLayout.setVerticalGroup(
+            jF_NuevoInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jF_NuevoInventarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel_listaprovee3)
+                .addGap(35, 35, 35)
+                .addGroup(jF_NuevoInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(JScrollPane15, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+                    .addComponent(JScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                .addComponent(jLabel_listaprovee4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jF_NuevoInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSepararSelectedInventario)
+                    .addComponent(btnEliminarInventarioSelected)
+                    .addComponent(jText_CantidadStock, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jF_NuevoInventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jF_NuevoInventarioLayout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(btnCrearInventario)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCancelarCrearInventario))
+                    .addGroup(jF_NuevoInventarioLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(JScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(36, 36, 36))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Solo Tests");
@@ -1336,7 +1585,12 @@ public class Form_onlyTests extends javax.swing.JFrame {
 
         jButton6.setText("Devoluciones");
 
-        jButton1.setText("Ver Inventario");
+        btn_VerInventario.setText("Ver Inventario");
+        btn_VerInventario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_VerInventarioActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1363,7 +1617,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
                                     .addComponent(btnVerCategorias, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
                                     .addComponent(btnVerSucursales, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(309, 309, 309)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btn_VerInventario, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(101, 101, 101)
                                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1383,7 +1637,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnVerProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnVerCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(btn_VerInventario))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnVerUsuarios)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1425,9 +1679,15 @@ public class Form_onlyTests extends javax.swing.JFrame {
 
  
             while(rsRV.next())
-            { //Extrae del rs y lo añade al Modelo de Tabla     
+            { //Extrae del rs y lo añade al Modelo de Tabla  
+                
+                String idcattemp = rsRV.getString("IDCategoria");
+                
+                String catNombre = ObtenerNombrePorID("tblCategorias", "IDCategoria", idcattemp, con, "catNombre");
+                
+                
               tblVerProductos.addRow(new Object[] {rsRV.getString("IDProducto"),rsRV.getString("proNombre"),rsRV.getString("proPrecio"), 
-                  rsRV.getString("IDCategoria"),rsRV.getString("proTalla") }); 
+                  catNombre,rsRV.getString("proTalla") }); 
             }  
             rsRV.close();
            }   
@@ -2226,6 +2486,207 @@ public class Form_onlyTests extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnVerUsuariosActionPerformed
 
+    private void btnNuevoInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoInventarioActionPerformed
+        jF_NuevoInventario.setVisible(true);
+        jF_NuevoInventario.setLocationRelativeTo(null);
+        
+        
+        CheckConnection con = new CheckConnection();
+           try{ 
+            DefaultTableModel tblVerSucursales = new DefaultTableModel(); //Crear Modelo de Tabla 
+            tblListaSelectSucursal.setModel(tblVerSucursales);  // Asignar el Modelo de Tabla 
+ 
+            tblVerSucursales.addColumn("IDSucursal"); //Asigna nombre a cada columna del Modelo de Tabla
+            tblVerSucursales.addColumn("Nombre");
+            tblVerSucursales.addColumn("Dirección");
+            tblVerSucursales.addColumn("Contacto");
+     
+            String query = "SELECT * FROM tblSucursales";
+            ResultSet rsRV = EjecutarQuery(con, query);         
+ 
+            while(rsRV.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla     
+              tblVerSucursales.addRow(new Object[] {rsRV.getString("IDSucursal"),rsRV.getString("sucNombre") ,rsRV.getString("sucDireccion"),
+                  rsRV.getString("sucContacto") }); 
+            }  
+            rsRV.close();
+           }
+        catch(SQLException e){
+  
+            JOptionPane.showMessageDialog(null,"Hubo Error en Mostrar la Tabla.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+           try{ 
+            DefaultTableModel tblVerProductos = new DefaultTableModel(); //Crear Modelo de Tabla
+            tblListaSelectProductos.setModel(tblVerProductos);  // Asignar el Modelo de Tabla 
+ 
+            tblVerProductos.addColumn("IDProducto"); //Asigna nombre a cada columna del Modelo de Tabla
+            tblVerProductos.addColumn("Nombre");
+            tblVerProductos.addColumn("Precio");
+            tblVerProductos.addColumn("Categoría");
+            tblVerProductos.addColumn("Talla");
+            
+            
+
+     
+            String query = "SELECT * FROM tblProductos";
+                        
+            ResultSet rsRV = EjecutarQuery(con, query);    
+
+ 
+            while(rsRV.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla  
+                
+                String idcattemp = rsRV.getString("IDCategoria");
+                
+                String catNombre = ObtenerNombrePorID("tblCategorias", "IDCategoria", idcattemp, con, "catNombre");
+                
+                
+              tblVerProductos.addRow(new Object[] {rsRV.getString("IDProducto"),rsRV.getString("proNombre"),rsRV.getString("proPrecio"), 
+                  catNombre,rsRV.getString("proTalla") }); 
+            }  
+            rsRV.close();
+           }   
+        catch(SQLException e){
+  
+            JOptionPane.showMessageDialog(null,"No existen Productos existentes.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_btnNuevoInventarioActionPerformed
+
+    private void btnBorrarInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarInventarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBorrarInventarioActionPerformed
+
+    private void btn_VerInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_VerInventarioActionPerformed
+        jF_VerInventario.setVisible(true);
+        jF_VerInventario.setLocationRelativeTo(null);
+
+        CheckConnection con = new CheckConnection();
+        DefaultTableModel tblVerInventario = new DefaultTableModel();
+
+        try {
+            tblListaInventario.setModel(tblVerInventario);
+
+            tblVerInventario.addColumn("IDProducto");
+            tblVerInventario.addColumn("Producto");
+            tblVerInventario.addColumn("Sucursal");
+            tblVerInventario.addColumn("Stock");
+
+            String query = "SELECT * FROM tblInventarioProducto";
+            ResultSet rsRV = EjecutarQuery(con, query);
+
+            while (rsRV.next()) {
+                String idsucutemp = rsRV.getString("IDSucursal");
+                String idprodtemp = rsRV.getString("IDProducto");
+
+                String sucNombre = ObtenerNombrePorID("tblSucursales", "IDSucursal", idsucutemp, con, "sucNombre");
+                String proNombre = ObtenerNombrePorID("tblProductos", "IDProducto", idprodtemp, con, "proNombre");
+
+                tblVerInventario.addRow(new Object[] { rsRV.getString("IDProducto"), proNombre, sucNombre,rsRV.getString("invStock")  });
+            }
+
+            rsRV.close();
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Hubo un error al mostrar la tabla.", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_btn_VerInventarioActionPerformed
+
+    private void btnSepararSelectedInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSepararSelectedInventarioActionPerformed
+        CheckConnection con = new CheckConnection();
+        
+        int filaSeleccionadaSucursal = tblListaSelectSucursal.getSelectedRow();
+        int filaSeleccionadaProducto = tblListaSelectProductos.getSelectedRow();
+        
+        
+        try
+        {
+           if (filaSeleccionadaSucursal == -1 && filaSeleccionadaProducto == -1) //para validar que se seleccione fila
+               JOptionPane.showMessageDialog(null, "Debe Seleccionar una Sucursal y un Producto Minimo");
+           else
+           {
+               if (filaSeleccionadaSucursal != -1 && filaSeleccionadaProducto == -1)
+                   JOptionPane.showMessageDialog(null, "Debe Seleccionar el Producto a Relacionar");
+               if (filaSeleccionadaSucursal == -1 && filaSeleccionadaProducto != -1)
+                   JOptionPane.showMessageDialog(null, "Debe Seleccionar la Sucursal a Relacionar");
+               if (filaSeleccionadaSucursal != -1 && filaSeleccionadaProducto != -1)
+               {
+                    DefaultTableModel dtReporte = (DefaultTableModel)tblListaSelectedInventario.getModel(); // Crea un Modelo de Tabla y asigna a un jTable
+
+                    String IDSucursal = tblListaSelectSucursal.getValueAt(filaSeleccionadaSucursal, 0).toString();
+                    String IDProducto  = tblListaSelectProductos.getValueAt(filaSeleccionadaProducto, 0).toString();
+                    String sucNombre  = tblListaSelectSucursal.getValueAt(filaSeleccionadaSucursal, 1).toString();
+                    String proNombre  = tblListaSelectProductos.getValueAt(filaSeleccionadaProducto, 1).toString();
+                    
+                    int StockIngresado = Integer.parseInt(jText_CantidadStock.getText());
+                    
+                    Object[] rowData = {IDProducto,proNombre,IDSucursal,sucNombre, StockIngresado};
+                    boolean filaDuplicada = false;
+                    for (int i = 0; i < dtReporte.getRowCount(); i++) {
+                        boolean igual = true;
+                        for (int j = 0; j < dtReporte.getColumnCount(); j++) {
+                            if (!rowData[j].equals(dtReporte.getValueAt(i, j))) {
+                                igual = false;
+                                break;
+                            }
+                        }
+                        if (igual) {
+                            filaDuplicada = true;
+                            break;
+                        }
+                    }
+
+                    if (!filaDuplicada) {
+                        // No existe una fila igual, entonces puedes insertar la nueva fila
+                        dtReporte.addRow(new Object[]{IDProducto,proNombre,IDSucursal,sucNombre, StockIngresado});
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Ya Está Seleccionado Esta Relación");
+                    }
+                    
+                    
+               }
+           }
+        }
+        catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(null, "Hubo un Error Al Seleccionar Datos");
+        }
+    }//GEN-LAST:event_btnSepararSelectedInventarioActionPerformed
+
+    private void btnEliminarInventarioSelectedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarInventarioSelectedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarInventarioSelectedActionPerformed
+
+    private void btnCrearInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearInventarioActionPerformed
+        CheckConnection con = new CheckConnection();
+        
+
+        try{
+              
+            for(int i=0;i<tblListaSelectedInventario.getRowCount();i++)
+            {
+                String IDSucursal = tblListaSelectedInventario.getValueAt(i, 2).toString();
+                String IDProducto = tblListaSelectedInventario.getValueAt(i, 0).toString();
+                String Stock = tblListaSelectedInventario.getValueAt(i, 4).toString();
+                
+                Statement stDetalle = null;
+                stDetalle = con.ObtenerConexion().createStatement();
+                stDetalle.executeUpdate("INSERT INTO tblInventarioProducto(IDProducto, IDSucursal, invStock)" + 
+                            "values('"+ IDProducto +"' , '"+ IDSucursal +"', '"+ Stock +"')");
+                    
+                    
+                
+            }
+            JOptionPane.showMessageDialog(null, "Se registro correctamente ...\n");
+        }
+        catch(Exception e){
+                JOptionPane.showMessageDialog(null,"No se Pudo Agregar","Mensaje",JOptionPane.CANCEL_OPTION);
+
+        }
+    }//GEN-LAST:event_btnCrearInventarioActionPerformed
+
+    private void btnCancelarCrearInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarCrearInventarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarCrearInventarioActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2264,7 +2725,11 @@ public class Form_onlyTests extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane JScrollPane10;
     private javax.swing.JScrollPane JScrollPane11;
+    private javax.swing.JScrollPane JScrollPane12;
     private javax.swing.JScrollPane JScrollPane13;
+    private javax.swing.JScrollPane JScrollPane14;
+    private javax.swing.JScrollPane JScrollPane15;
+    private javax.swing.JScrollPane JScrollPane16;
     private javax.swing.JScrollPane JScrollPane4;
     private javax.swing.JScrollPane JScrollPane5;
     private javax.swing.JScrollPane JScrollPane6;
@@ -2272,18 +2737,22 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JScrollPane JScrollPane8;
     private javax.swing.JScrollPane JScrollPane9;
     private javax.swing.JButton btnBorrarCategoria;
+    private javax.swing.JButton btnBorrarInventario;
     private javax.swing.JButton btnBorrarProducto;
     private javax.swing.JButton btnBorrarProveedor;
     private javax.swing.JButton btnBorrarRelacion;
     private javax.swing.JButton btnBorrarUsuario;
     private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnCancelarCrearInventario;
     private javax.swing.JButton btnCancelarCrearRelacion;
     private javax.swing.JButton btnCancelar_NuevoProd;
     private javax.swing.JButton btnCancelar_NuevoSuc;
     private javax.swing.JButton btnCancelar_NuevoUsu;
     private javax.swing.JButton btnCancelar_Nuevoprov;
+    private javax.swing.JButton btnCrearInventario;
     private javax.swing.JButton btnCrearRelacion;
     private javax.swing.JButton btnEditarSucursal;
+    private javax.swing.JButton btnEliminarInventarioSelected;
     private javax.swing.JButton btnEliminarRelacionSelected;
     private javax.swing.JButton btnIngresarProducto;
     private javax.swing.JButton btnIngresarProveedor;
@@ -2292,9 +2761,11 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JButton btnNuevaCategoria;
     private javax.swing.JButton btnNuevaRelacion;
     private javax.swing.JButton btnNuevaSucursal;
+    private javax.swing.JButton btnNuevoInventario;
     private javax.swing.JButton btnNuevoProducto;
     private javax.swing.JButton btnNuevoProveedor;
     private javax.swing.JButton btnNuevoUsuario;
+    private javax.swing.JButton btnSepararSelectedInventario;
     private javax.swing.JButton btnSepararSelectedRelación;
     private javax.swing.JButton btnVerCategorias;
     private javax.swing.JButton btnVerProductos;
@@ -2303,7 +2774,7 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JButton btnVerSucursales;
     private javax.swing.JButton btnVerUsuarios;
     private javax.swing.JButton btn_IngresarCategoria;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btn_VerInventario;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -2315,7 +2786,9 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JFrame jF_AñadirSucursal;
     private javax.swing.JFrame jF_AñadirUsuario;
     private javax.swing.JFrame jF_NuevaRelacion;
+    private javax.swing.JFrame jF_NuevoInventario;
     private javax.swing.JFrame jF_VerCategorias;
+    private javax.swing.JFrame jF_VerInventario;
     private javax.swing.JFrame jF_VerProductos;
     private javax.swing.JFrame jF_VerProvee;
     private javax.swing.JFrame jF_VerProveedores;
@@ -2353,7 +2826,11 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_listaTallas3;
     private javax.swing.JLabel jLabel_listaprovee;
     private javax.swing.JLabel jLabel_listaprovee1;
+    private javax.swing.JLabel jLabel_listaprovee2;
+    private javax.swing.JLabel jLabel_listaprovee3;
+    private javax.swing.JLabel jLabel_listaprovee4;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jText_CantidadStock;
     private javax.swing.JTextField jText_IDCategoria;
     private javax.swing.JTextField jText_IDProducto;
     private javax.swing.JTextField jText_IDUsuario;
@@ -2372,11 +2849,15 @@ public class Form_onlyTests extends javax.swing.JFrame {
     private javax.swing.JTextField jText_usuNombre;
     private javax.swing.JTextField jText_usuPassword;
     private javax.swing.JTable tblListaCategorias;
+    private javax.swing.JTable tblListaInventario;
     private javax.swing.JTable tblListaProductos;
     private javax.swing.JTable tblListaProvee;
     private javax.swing.JTable tblListaProveedores;
     private javax.swing.JTable tblListaSelectProducto;
+    private javax.swing.JTable tblListaSelectProductos;
     private javax.swing.JTable tblListaSelectProvee;
+    private javax.swing.JTable tblListaSelectSucursal;
+    private javax.swing.JTable tblListaSelectedInventario;
     private javax.swing.JTable tblListaSelectedRelacion;
     private javax.swing.JTable tblListaSucursales;
     private javax.swing.JTable tblListaUsuarios;
