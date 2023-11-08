@@ -1314,7 +1314,7 @@ public class Form_Main extends javax.swing.JFrame {
             .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        jF_AñadirSucursal.setMinimumSize(new java.awt.Dimension(540, 378));
+        jF_AñadirSucursal.setMinimumSize(new java.awt.Dimension(550, 295));
 
         jPanel14.setBackground(new java.awt.Color(30, 50, 40));
 
@@ -2448,7 +2448,7 @@ public class Form_Main extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Sistema de Ventas");
 
-        btnVerVentas.setBackground(new java.awt.Color(153, 153, 153));
+        btnVerVentas.setBackground(new java.awt.Color(204, 204, 204));
         btnVerVentas.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         btnVerVentas.setText("Ver Ventas");
         btnVerVentas.addActionListener(new java.awt.event.ActionListener() {
@@ -2457,7 +2457,7 @@ public class Form_Main extends javax.swing.JFrame {
             }
         });
 
-        btnIngresarVenta.setBackground(new java.awt.Color(153, 153, 153));
+        btnIngresarVenta.setBackground(new java.awt.Color(204, 204, 204));
         btnIngresarVenta.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         btnIngresarVenta.setText("Ingresar Ventas");
         btnIngresarVenta.addActionListener(new java.awt.event.ActionListener() {
@@ -2466,7 +2466,7 @@ public class Form_Main extends javax.swing.JFrame {
             }
         });
 
-        btnVerInventario.setBackground(new java.awt.Color(153, 153, 153));
+        btnVerInventario.setBackground(new java.awt.Color(204, 204, 204));
         btnVerInventario.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         btnVerInventario.setText("Ver Inventario");
         btnVerInventario.addActionListener(new java.awt.event.ActionListener() {
@@ -2508,7 +2508,7 @@ public class Form_Main extends javax.swing.JFrame {
                 .addContainerGap(91, Short.MAX_VALUE))
         );
 
-        jMenuBar1.setBackground(new java.awt.Color(205, 133, 63));
+        jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
         jMenuBar1.setForeground(new java.awt.Color(205, 133, 63));
         jMenuBar1.setFocusable(false);
         jMenuBar1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N

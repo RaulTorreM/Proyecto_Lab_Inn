@@ -57,7 +57,7 @@ public class Form_IniciarSesion extends javax.swing.JFrame {
         Text_Password.setMinimumSize(new java.awt.Dimension(150, 20));
         Text_Password.setName(""); // NOI18N
 
-        btnIniciarSesion.setBackground(new java.awt.Color(153, 153, 153));
+        btnIniciarSesion.setBackground(new java.awt.Color(204, 204, 204));
         btnIniciarSesion.setText("ACEPTAR");
         btnIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,7 +65,7 @@ public class Form_IniciarSesion extends javax.swing.JFrame {
             }
         });
 
-        btnCancelarInicio.setBackground(new java.awt.Color(153, 153, 153));
+        btnCancelarInicio.setBackground(new java.awt.Color(204, 204, 204));
         btnCancelarInicio.setText("CANCELAR");
         btnCancelarInicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,7 +83,7 @@ public class Form_IniciarSesion extends javax.swing.JFrame {
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("\"PURIY CLASS\"");
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyectolabinn/logo.jpg"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/logo.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
