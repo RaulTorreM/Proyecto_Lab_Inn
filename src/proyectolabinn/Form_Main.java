@@ -1451,7 +1451,6 @@ public class Form_Main extends javax.swing.JFrame {
         );
 
         jF_AñadirUsuario.setMinimumSize(new java.awt.Dimension(614, 315));
-        jF_AñadirUsuario.setPreferredSize(new java.awt.Dimension(614, 280));
 
         jPanel3.setBackground(new java.awt.Color(30, 50, 40));
 
@@ -1685,7 +1684,6 @@ public class Form_Main extends javax.swing.JFrame {
         );
 
         jF_VerInventario.setMinimumSize(new java.awt.Dimension(450, 330));
-        jF_VerInventario.setPreferredSize(new java.awt.Dimension(450, 300));
 
         jPanel15.setBackground(new java.awt.Color(30, 50, 40));
 
@@ -2511,11 +2509,9 @@ public class Form_Main extends javax.swing.JFrame {
         jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
         jMenuBar1.setForeground(new java.awt.Color(205, 133, 63));
         jMenuBar1.setFocusable(false);
-        jMenuBar1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         bmInicio.setBackground(new java.awt.Color(205, 133, 63));
         bmInicio.setText("Inicio");
-        bmInicio.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         opNuevoUser.setText("Ver Usuarios");
         opNuevoUser.addActionListener(new java.awt.event.ActionListener() {
@@ -2545,7 +2541,6 @@ public class Form_Main extends javax.swing.JFrame {
         jMenuBar1.add(bmInicio);
 
         bmGestionar.setText("Gestionar");
-        bmGestionar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         opVerProductos.setText("Productos");
         opVerProductos.addActionListener(new java.awt.event.ActionListener() {
@@ -2567,7 +2562,6 @@ public class Form_Main extends javax.swing.JFrame {
 
         bmEntidades.setText("Entidades");
         bmEntidades.setToolTipText("");
-        bmEntidades.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         opVerProveedores.setText("Proveedores");
         opVerProveedores.addActionListener(new java.awt.event.ActionListener() {
@@ -4025,6 +4019,7 @@ public class Form_Main extends javax.swing.JFrame {
             
             String query = "SELECT VC.IDVentaCabecera , VC.ventFecha, SUM(VD.ventCantidad) AS ventCantidadTOTAL, SUM(VD.ventSubtotal) AS ventImporte "
                     + "FROM tblVentaCabecera VC  JOIN tblVentaDetalles VD ON VC.IDVentaCabecera = VD.IDVentaCabecera "
+                    + "WHERE VC.IDSucursal = '"+IDSucursaltemp+"' "
                     + "GROUP BY VC.IDVentaCabecera, VC.ventFecha";
             
             ResultSet rsRV = EjecutarQuery(con, query);
