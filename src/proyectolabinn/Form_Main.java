@@ -1797,7 +1797,6 @@ public class Form_Main extends javax.swing.JFrame {
         );
 
         jF_NuevoInventario.setMinimumSize(new java.awt.Dimension(1050, 680));
-        jF_NuevoInventario.setPreferredSize(new java.awt.Dimension(1050, 680));
 
         jPanel16.setBackground(new java.awt.Color(30, 50, 40));
         jPanel16.setMinimumSize(new java.awt.Dimension(1050, 680));
@@ -1997,8 +1996,8 @@ public class Form_Main extends javax.swing.JFrame {
         );
 
         jF_IngresarVenta.setTitle("REGISTRAR VENTA");
-        jF_IngresarVenta.setMinimumSize(new java.awt.Dimension(1106, 901));
-        jF_IngresarVenta.setPreferredSize(new java.awt.Dimension(1050, 951));
+        jF_IngresarVenta.setMinimumSize(new java.awt.Dimension(950, 790));
+        jF_IngresarVenta.setPreferredSize(new java.awt.Dimension(950, 790));
 
         jPanel6.setBackground(new java.awt.Color(245, 222, 179));
         jPanel6.setPreferredSize(new java.awt.Dimension(1000, 900));
@@ -2154,42 +2153,10 @@ public class Form_Main extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblNumCP1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TxtSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel16)
-                        .addGap(218, 218, 218)))
-                .addComponent(jLabel27)
-                .addGap(27, 27, 27)
-                .addComponent(lblUltimaVenta)
-                .addGap(128, 128, 128))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(1076, 1076, 1076)
-                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnQuitarCarrito, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 723, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(344, 344, 344)
-                        .addComponent(lblTotal)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(btnAgregarCarrito)
@@ -2199,7 +2166,7 @@ public class Form_Main extends javax.swing.JFrame {
                                             .addComponent(lblCant)
                                             .addComponent(jSpin_CantVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(28, 28, 28)
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 641, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addGap(169, 169, 169)
                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2207,21 +2174,18 @@ public class Form_Main extends javax.swing.JFrame {
                                     .addGroup(jPanel6Layout.createSequentialGroup()
                                         .addComponent(txtNombProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btnBuscarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 1080, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(btnBuscarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btnNuevoCliente)))))
+                        .addGap(260, 260, 260)
+                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(202, 202, 202)
-                        .addComponent(btnEfectuarVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(273, 273, 273)
-                        .addComponent(btnCancelar_Venta, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(438, 438, 438)
-                        .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(195, 195, 195)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnNuevoCliente)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblNumCP1)
                             .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(TxtSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(lblNumCP)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtIDVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2232,24 +2196,53 @@ public class Form_Main extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(lblFechaCP)
                                 .addGap(18, 18, 18)
-                                .addComponent(dateChFechaVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(dateChFechaVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(btnQuitarCarrito, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel16)
+                                .addGap(185, 185, 185)
+                                .addComponent(jLabel27)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblUltimaVenta)
+                                .addGap(188, 188, 188))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 1080, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())))))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(405, 405, 405)
+                .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(338, 338, 338)
+                .addComponent(lblTotal)
+                .addGap(30, 30, 30)
+                .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(136, 136, 136)
+                .addComponent(btnEfectuarVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCancelar_Venta, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(282, 282, 282))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGap(29, 29, 29)
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel27)
-                                    .addComponent(lblUltimaVenta)))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel16)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addContainerGap()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel16)
+                            .addComponent(jLabel27)
+                            .addComponent(lblUltimaVenta))
+                        .addGap(23, 23, 23)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(lblNumCP)
@@ -2259,15 +2252,15 @@ public class Form_Main extends javax.swing.JFrame {
                             .addComponent(dateChFechaVenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_usuNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblNumCP1)
-                            .addComponent(TxtSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(40, 40, 40)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(39, 39, 39)
+                        .addComponent(lblNumCP1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(TxtSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(5, 5, 5)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(504, 504, 504))
+                        .addGap(91, 91, 91)
+                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(lblNomProd, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2277,48 +2270,46 @@ public class Form_Main extends javax.swing.JFrame {
                             .addComponent(btnNuevoCliente))
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel28)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addGap(77, 77, 77)
-                                        .addComponent(btnQuitarCarrito, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, 0)
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblTotal)))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addGap(58, 58, 58)
                                 .addComponent(lblCant)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jSpin_CantVenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(23, 23, 23)
-                                .addComponent(btnAgregarCarrito, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(btnAgregarCarrito, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(149, 149, 149)
+                        .addComponent(btnQuitarCarrito, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jLabel28)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnEfectuarVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnCancelar_Venta, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(43, 43, 43))))
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTotal)
+                    .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEfectuarVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCancelar_Venta, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jF_IngresarVentaLayout = new javax.swing.GroupLayout(jF_IngresarVenta.getContentPane());
         jF_IngresarVenta.getContentPane().setLayout(jF_IngresarVentaLayout);
         jF_IngresarVentaLayout.setHorizontalGroup(
             jF_IngresarVentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jF_IngresarVentaLayout.createSequentialGroup()
-                .addGap(0, 12, Short.MAX_VALUE)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 1047, Short.MAX_VALUE))
+            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 947, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jF_IngresarVentaLayout.setVerticalGroup(
             jF_IngresarVentaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 951, Short.MAX_VALUE)
+            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 786, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         jF_VerVentas.setMinimumSize(new java.awt.Dimension(670, 374));
@@ -2622,7 +2613,6 @@ public class Form_Main extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(405, 453));
-        setPreferredSize(new java.awt.Dimension(475, 473));
 
         jPanel1.setBackground(new java.awt.Color(0, 51, 51));
 
@@ -3835,354 +3825,6 @@ public class Form_Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCancelarCrearInventarioActionPerformed
 
-    private void btnCancelar_VentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelar_VentaActionPerformed
-        jF_IngresarVenta.setVisible(false);
-    }//GEN-LAST:event_btnCancelar_VentaActionPerformed
-
-    private void btnEfectuarVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEfectuarVentaActionPerformed
-
-        String FechaVenta;
-        CheckConnection con = new CheckConnection();
-        Connection connection = con.ObtenerConexion();
-        
-        String usuNombretemp = DatoUsuario;
-        String IDUsuariotemp = ObtenerNombrePorID("tblUsuarios", "usuNombre", usuNombretemp, con, "IDUsuario");
-        String IDSucursaltemp = ObtenerNombrePorID("tblUsuarios", "IDUsuario", IDUsuariotemp, con, "IDSucursal");
-        String sucNombre = ObtenerNombrePorID("tblSucursales", "IDSucursal", IDSucursaltemp, con, "sucNombre");
-        String newidCab = null ;
-        boolean VerifyVenta = false;
-        
-        String querys = "SELECT COUNT(*) AS Cantidad FROM tblVentaCabecera WHERE IDVentaCabecera IS NOT NULL";
-            try{           
-                ResultSet rsRV2 = EjecutarQuery(con, querys);         
-
-                while(rsRV2.next())
-                { //Extrae del rs y lo añade al Modelo de Tabla     
-                    int cantidad = rsRV2.getInt("Cantidad");
-                    if (cantidad > 0) {
-                      newidCab = "VT" + String.format("%03d", cantidad+1);
-                    } 
-                    else {
-                      newidCab = "VT001";
-                    }
-                }  
-                rsRV2.close();
-               }   
-            catch(SQLException e){
-
-                JOptionPane.showMessageDialog(null,"Hubo un Error en Leer la DB (1).","Mensaje",JOptionPane.INFORMATION_MESSAGE);
-            }
-        
-        
-
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); //Primero dar formato para fecha
-        FechaVenta = sdf.format(dateChFechaVenta.getDate());
-        
-         // Registrar en Cabecera Comprobante
-            try
-            {
-                
-                Statement st = null;
-                st = con.ObtenerConexion().createStatement();
-                st.executeUpdate("INSERT INTO tblVentaCabecera (IDVentaCabecera, ventFecha, IDSucursal) "
-                        + "VALUES ('"+newidCab+"', '"+FechaVenta+"', '"+IDSucursaltemp+"')");
-    
-            }
-            catch(Exception e)
-            {
-                JOptionPane.showMessageDialog(null,"ERROR NumCabecera","Mensaje",JOptionPane.INFORMATION_MESSAGE);
-            }
-
-        for(int i = 0;i<tblCarrito.getRowCount();i++)
-        {
-            VerifyVenta = false;
-            try{
-                
-                String proNombre = tblCarrito.getValueAt(i, 0).toString();
-                String IDProductTemp = ObtenerNombrePorID("tblProductos", "proNombre", proNombre, con, "IDProducto");
-                String cantidadVenta = tblCarrito.getValueAt(i, 3).toString();
-                String precioVenta = tblCarrito.getValueAt(i, 2).toString();
-                String subtotalVenta = tblCarrito.getValueAt(i, 4).toString();
-                
-                String newIDDetalles = null;
-                 
-                
-                // Registrar en Detalles Comprobante
-                try
-                    {//Actualizar Stock
-                        
-                        String queryStock= "SELECT invStock FROM tblInventarioProducto WHERE IDProducto = '"+IDProductTemp+"' AND IDSucursal = '"+IDSucursaltemp+"'";
-                        PreparedStatement stmt = connection.prepareStatement(queryStock);
-                        ResultSet rs = stmt.executeQuery();
-                        if (rs.next()) {
-                            int invStock = rs.getInt("invStock");
-                            int cantVentaStock = Integer.parseInt(cantidadVenta);
-                            int nuevoInvStock = invStock - cantVentaStock;
-                            
-                            if (nuevoInvStock >= 0) {
-                                
-                                
-                                String queryUpdate = "UPDATE tblInventarioProducto SET invStock = '"+Integer.toString(nuevoInvStock)+"' WHERE IDProducto = '"+IDProductTemp+"' AND IDSucursal = '"+IDSucursaltemp+"'";
-                                PreparedStatement stmtUpdate = connection.prepareStatement(queryUpdate);
-                                stmtUpdate.executeUpdate();
-                                
-                                String queryNeidDetalle = "SELECT COUNT(*) AS Cantidad FROM tblVentaDetalles WHERE IDVentaDetalles IS NOT NULL";
-                                try{           
-                                    ResultSet rsRVn = EjecutarQuery(con, queryNeidDetalle);         
-
-                                    while(rsRVn.next())
-                                    { //Extrae del rs y lo añade al Modelo de Tabla     
-                                        int cantidad = rsRVn.getInt("Cantidad");
-                                        if (cantidad > 0) {
-                                          newIDDetalles  = "VD" + String.format("%03d", cantidad+1);
-                                        } 
-                                        else {
-                                          newIDDetalles  = "VD001";
-                                        }
-                                    }  
-                                    rsRVn.close();
-                                   }   
-                                catch(SQLException e){
-
-                                    JOptionPane.showMessageDialog(null,"Hubo un Error en Leer la DB (1).","Mensaje",JOptionPane.INFORMATION_MESSAGE);
-                                }
-                                
-                                Statement stDetalle = null;
-                                stDetalle = con.ObtenerConexion().createStatement();
-                                stDetalle.executeUpdate("INSERT INTO tblVentaDetalles(IDVentaDetalles,IDVentaCabecera,IDProducto,ventCantidad,ventPrecio,ventSubtotal)" +
-                                    "values('"+newIDDetalles+"' , '"+newidCab+"' , '"+IDProductTemp+"' , '"+cantidadVenta+"' , '"+precioVenta+"' , '"+subtotalVenta+"')");  
-                                
-                                VerifyVenta = true;
-                            }
-                            else {
-                                JOptionPane.showMessageDialog(null,"No hay Suficiente Stock Para la Venta\n"+"Revisar El Inventario...","Mensaje",JOptionPane.INFORMATION_MESSAGE);
-                                throw new IllegalArgumentException("Stock insuficiente");
-                            }
-                        }
-                        rs.close();
-                    }
-                catch(SQLException | HeadlessException | IllegalArgumentException e)
-                    {
-                        JOptionPane.showMessageDialog(null,"No se Actualizó Stock","Mensaje",JOptionPane.INFORMATION_MESSAGE);
-                    }
-                }
-                catch(Exception e){
-                    JOptionPane.showMessageDialog(null,"No se Pudo Agregar la Venta","Mensaje",JOptionPane.CANCEL_OPTION);
-
-
-                }
-
-        }
-        
-        if(VerifyVenta == true)
-        {
-            String TOTAL = txtTotal.getText();
-            JOptionPane.showMessageDialog(null, "Se registro correctamente la venta...\n"+"El monto a pagar es:\n"+String.valueOf(TOTAL));
-        }
-        
-        DefaultTableModel model = (DefaultTableModel) tblCarrito.getModel();
-        model.setRowCount(0);
-        txtTotal.setText("");
-    }//GEN-LAST:event_btnEfectuarVentaActionPerformed
-
-    private void btnQuitarCarritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuitarCarritoActionPerformed
-
-        CheckConnection con = new CheckConnection();
-        try{
-            int filaSeleccionada  = tblCarrito.getSelectedRow();
-            double sSubtotal  = Double.parseDouble(tblCarrito.getValueAt(filaSeleccionada, 4).toString());
-            DefaultTableModel modelo = (DefaultTableModel) tblCarrito.getModel();
-            modelo.removeRow(filaSeleccionada);
-
-
-            ImporteVenta = ImporteVenta - sSubtotal;
-
-            sImporteVenta = String.valueOf(ImporteVenta);
-            txtTotal.setText(sImporteVenta);
-         }   
-        catch(Exception e){
-  
-            JOptionPane.showMessageDialog(null,"Debes Seleccionar un Producto a Eliminar.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
-        }
-
-        
-        
-    }//GEN-LAST:event_btnQuitarCarritoActionPerformed
-
-    private void btnAgregarCarritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarCarritoActionPerformed
-
-        CheckConnection con = new CheckConnection();
-
-
-        int filaSeleccionadaProductos = tblProductoEncontrado.getSelectedRow();
-
-        DefaultTableModel dtCarritoVenta = (DefaultTableModel)tblCarrito.getModel();
-        
-        
-
-        try{
-            if (filaSeleccionadaProductos == -1 ) //para validar que se seleccione fila
-            JOptionPane.showMessageDialog(null, "Debe Seleccionar un Producto ");
-            else
-            {
-                try
-                {
-                    if (filaSeleccionadaProductos != -1 )
-                    {
-                        if(jSpin_CantVenta.getValue().equals(""))
-                        JOptionPane.showMessageDialog(null, "Debe Ingresar Cantidad");
-                        else
-                        {   //Obtener Datos del Jtable de Producto Encontrado
-
-                            String nomProducto  = tblProductoEncontrado.getValueAt(filaSeleccionadaProductos, 0).toString();
-                            double proPrecio  = Double.parseDouble(tblProductoEncontrado.getValueAt(filaSeleccionadaProductos, 1).toString());
-                            String proTalla = tblProductoEncontrado.getValueAt(filaSeleccionadaProductos, 3).toString();
-                            int cantPedido   = (int) jSpin_CantVenta.getValue();
-                            
-                            if (cantPedido > 0)
-                            {
-                                //Calcular Importe de fila Sub Total Productos
-                                Double subTotal = proPrecio * cantPedido;
-                                String subTotalCarrito = String.valueOf(subTotal);
-
-
-                                //Pasarlo al jtable de Pedido para Efecturar Venta
-                                // Crea un Modelo de Tabla y asigna a un jTable
-
-                                dtCarritoVenta.addRow(new Object[]{nomProducto,proTalla,proPrecio,cantPedido,subTotalCarrito});
-
-                                ImporteVenta = ImporteVenta + subTotal;
-
-                                sImporteVenta = String.valueOf(ImporteVenta);
-
-                                txtTotal.setText(sImporteVenta);
-                                txtNombProducto.setText("");
-                            }
-                            else
-                            {
-                                JOptionPane.showMessageDialog(null, "Debe ingresar una cantidad mayor a 0");
-                            }
-
-                        }
-                    }  
-             
-                }
-                catch(HeadlessException | NumberFormatException e)
-                {
-                    System.out.println("ERROR2::::::::::");
-                }
-            }
-        }
-        catch(Exception e){
-            System.out.println("ERROR1::::::::::");
-
-        }
-    }//GEN-LAST:event_btnAgregarCarritoActionPerformed
-
-    private void btnBuscarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarProductoActionPerformed
-
-        String proNombre= txtNombProducto.getText();
-
-        CheckConnection con = new CheckConnection();
-
-        try{ 
-            DefaultTableModel tblVerProductos = new DefaultTableModel(); //Crear Modelo de Tabla
-            tblProductoEncontrado.setModel(tblVerProductos);  // Asignar el Modelo de Tabla 
- 
-            tblVerProductos.addColumn("IDProducto"); //Asigna nombre a cada columna del Modelo de Tabla
-            tblVerProductos.addColumn("Nombre");
-            tblVerProductos.addColumn("Precio");
-            tblVerProductos.addColumn("Categoría");
-            tblVerProductos.addColumn("Talla");
-            
-            
-
-     
-            String query = "SELECT * FROM tblProductos WHERE proNombre LIKE '%"+proNombre+"%' ";
-            
-            ResultSet rsRV = EjecutarQuery(con, query);    
-
-
-            while(rsRV.next())
-            { //Extrae del rs y lo añade al Modelo de Tabla  
-                
-                String idcattemp = rsRV.getString("IDCategoria");
-                
-                String catNombre = ObtenerNombrePorID("tblCategorias", "IDCategoria", idcattemp, con, "catNombre");
-                
-                
-              tblVerProductos.addRow(new Object[] {rsRV.getString("IDProducto"),rsRV.getString("proNombre"),rsRV.getString("proPrecio"), 
-                  catNombre,rsRV.getString("proTalla") }); 
-            }  
-            rsRV.close();
-           }   
-        catch(SQLException e){
-  
-            JOptionPane.showMessageDialog(null,"Error en la Busqueda.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
-        }
-            
-
-        
-    }//GEN-LAST:event_btnBuscarProductoActionPerformed
-
-    private void btnNuevoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoClienteActionPerformed
-
-        jF_AñadirProductos.setLocationRelativeTo(null);  //CENTRAR VENTANA NUEVO CLIENTE
-        jF_AñadirProductos.setVisible(true);
-        
-        CheckConnection con = new CheckConnection();
-        
-        try{  
-            
-            String query = "SELECT COUNT(*) AS Cantidad FROM tblProductos WHERE IDProducto IS NOT NULL";
-            ResultSet rsRV = EjecutarQuery(con, query); 
-            
-            // Crear un JComboBox Para Categorias
-            String query2 = "SELECT catNombre FROM tblCategorias";
-            ResultSet rsRV2 = EjecutarQuery(con, query2);
-            
-            List<String> nombresCategorias = new ArrayList<>();
-            
-            while (rsRV2.next()) {
-                String catNombre = rsRV2.getString("catNombre");
-                nombresCategorias.add(catNombre);
-            }
-            rsRV2.close();
-            
-            // Crear un JComboBox y configurar su modelo de datos con los nombres de las categorías
-            DefaultComboBoxModel<String> comboBoxModel = new DefaultComboBoxModel<>(nombresCategorias.toArray(new String[0]));
-            jCBox_catNombre.setModel(comboBoxModel);
-            
-            while(rsRV.next())
-            { //Extrae del rs y lo añade al Modelo de Tabla     
-              int cantidad = rsRV.getInt("Cantidad");
-              if (cantidad > 0) {
-                  String newid = "PD" + String.format("%03d", cantidad+1);
-                  jText_IDProducto.setText(newid);
-                  System.out.println(newid);
-                } else {
-                  String newid = "PD001";
-                  jText_IDProducto.setText(newid);
-                  System.out.println(newid);
-
-                }
-            }    
-            rsRV.close();
-           }   
-        catch(SQLException e){
-  
-            JOptionPane.showMessageDialog(null,"Hubo un Error en Leer la DB.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
-        }
-    }//GEN-LAST:event_btnNuevoClienteActionPerformed
-
-    private void txtTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTotalActionPerformed
-
-    private void txt_usuNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_usuNombreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txt_usuNombreActionPerformed
-
     private void btnBorrarInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarInventarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBorrarInventarioActionPerformed
@@ -4466,6 +4108,335 @@ public class Form_Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCancelar_NuevoProd1ActionPerformed
 
+    private void btnCancelar_VentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelar_VentaActionPerformed
+        jF_IngresarVenta.setVisible(false);
+    }//GEN-LAST:event_btnCancelar_VentaActionPerformed
+
+    private void btnEfectuarVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEfectuarVentaActionPerformed
+
+        String FechaVenta;
+        CheckConnection con = new CheckConnection();
+        Connection connection = con.ObtenerConexion();
+
+        String usuNombretemp = DatoUsuario;
+        String IDUsuariotemp = ObtenerNombrePorID("tblUsuarios", "usuNombre", usuNombretemp, con, "IDUsuario");
+        String IDSucursaltemp = ObtenerNombrePorID("tblUsuarios", "IDUsuario", IDUsuariotemp, con, "IDSucursal");
+        String sucNombre = ObtenerNombrePorID("tblSucursales", "IDSucursal", IDSucursaltemp, con, "sucNombre");
+        String newidCab = null ;
+        boolean VerifyVenta = false;
+
+        String querys = "SELECT COUNT(*) AS Cantidad FROM tblVentaCabecera WHERE IDVentaCabecera IS NOT NULL";
+        try{
+            ResultSet rsRV2 = EjecutarQuery(con, querys);
+
+            while(rsRV2.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla
+                int cantidad = rsRV2.getInt("Cantidad");
+                if (cantidad > 0) {
+                    newidCab = "VT" + String.format("%03d", cantidad+1);
+                }
+                else {
+                    newidCab = "VT001";
+                }
+            }
+            rsRV2.close();
+        }
+        catch(SQLException e){
+
+            JOptionPane.showMessageDialog(null,"Hubo un Error en Leer la DB (1).","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); //Primero dar formato para fecha
+        FechaVenta = sdf.format(dateChFechaVenta.getDate());
+
+        // Registrar en Cabecera Comprobante
+        try
+        {
+
+            Statement st = null;
+            st = con.ObtenerConexion().createStatement();
+            st.executeUpdate("INSERT INTO tblVentaCabecera (IDVentaCabecera, ventFecha, IDSucursal) "
+                + "VALUES ('"+newidCab+"', '"+FechaVenta+"', '"+IDSucursaltemp+"')");
+
+        }
+        catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(null,"ERROR NumCabecera","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+
+        for(int i = 0;i<tblCarrito.getRowCount();i++)
+        {
+            VerifyVenta = false;
+            try{
+
+                String proNombre = tblCarrito.getValueAt(i, 0).toString();
+                String IDProductTemp = ObtenerNombrePorID("tblProductos", "proNombre", proNombre, con, "IDProducto");
+                String cantidadVenta = tblCarrito.getValueAt(i, 3).toString();
+                String precioVenta = tblCarrito.getValueAt(i, 2).toString();
+                String subtotalVenta = tblCarrito.getValueAt(i, 4).toString();
+
+                String newIDDetalles = null;
+
+                // Registrar en Detalles Comprobante
+                try
+                {//Actualizar Stock
+
+                    String queryStock= "SELECT invStock FROM tblInventarioProducto WHERE IDProducto = '"+IDProductTemp+"' AND IDSucursal = '"+IDSucursaltemp+"'";
+                    PreparedStatement stmt = connection.prepareStatement(queryStock);
+                    ResultSet rs = stmt.executeQuery();
+                    if (rs.next()) {
+                        int invStock = rs.getInt("invStock");
+                        int cantVentaStock = Integer.parseInt(cantidadVenta);
+                        int nuevoInvStock = invStock - cantVentaStock;
+
+                        if (nuevoInvStock >= 0) {
+
+                            String queryUpdate = "UPDATE tblInventarioProducto SET invStock = '"+Integer.toString(nuevoInvStock)+"' WHERE IDProducto = '"+IDProductTemp+"' AND IDSucursal = '"+IDSucursaltemp+"'";
+                            PreparedStatement stmtUpdate = connection.prepareStatement(queryUpdate);
+                            stmtUpdate.executeUpdate();
+
+                            String queryNeidDetalle = "SELECT COUNT(*) AS Cantidad FROM tblVentaDetalles WHERE IDVentaDetalles IS NOT NULL";
+                            try{
+                                ResultSet rsRVn = EjecutarQuery(con, queryNeidDetalle);
+
+                                while(rsRVn.next())
+                                { //Extrae del rs y lo añade al Modelo de Tabla
+                                    int cantidad = rsRVn.getInt("Cantidad");
+                                    if (cantidad > 0) {
+                                        newIDDetalles  = "VD" + String.format("%03d", cantidad+1);
+                                    }
+                                    else {
+                                        newIDDetalles  = "VD001";
+                                    }
+                                }
+                                rsRVn.close();
+                            }
+                            catch(SQLException e){
+
+                                JOptionPane.showMessageDialog(null,"Hubo un Error en Leer la DB (1).","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+                            }
+
+                            Statement stDetalle = null;
+                            stDetalle = con.ObtenerConexion().createStatement();
+                            stDetalle.executeUpdate("INSERT INTO tblVentaDetalles(IDVentaDetalles,IDVentaCabecera,IDProducto,ventCantidad,ventPrecio,ventSubtotal)" +
+                                "values('"+newIDDetalles+"' , '"+newidCab+"' , '"+IDProductTemp+"' , '"+cantidadVenta+"' , '"+precioVenta+"' , '"+subtotalVenta+"')");
+
+                            VerifyVenta = true;
+                        }
+                        else {
+                            JOptionPane.showMessageDialog(null,"No hay Suficiente Stock Para la Venta\n"+"Revisar El Inventario...","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+                            throw new IllegalArgumentException("Stock insuficiente");
+                        }
+                    }
+                    rs.close();
+                }
+                catch(SQLException | HeadlessException | IllegalArgumentException e)
+                {
+                    JOptionPane.showMessageDialog(null,"No se Actualizó Stock","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+                }
+            }
+            catch(Exception e){
+                JOptionPane.showMessageDialog(null,"No se Pudo Agregar la Venta","Mensaje",JOptionPane.CANCEL_OPTION);
+
+            }
+
+        }
+
+        if(VerifyVenta == true)
+        {
+            String TOTAL = txtTotal.getText();
+            JOptionPane.showMessageDialog(null, "Se registro correctamente la venta...\n"+"El monto a pagar es:\n"+String.valueOf(TOTAL));
+        }
+
+        DefaultTableModel model = (DefaultTableModel) tblCarrito.getModel();
+        model.setRowCount(0);
+        txtTotal.setText("");
+    }//GEN-LAST:event_btnEfectuarVentaActionPerformed
+
+    private void btnQuitarCarritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuitarCarritoActionPerformed
+
+        CheckConnection con = new CheckConnection();
+        try{
+            int filaSeleccionada  = tblCarrito.getSelectedRow();
+            double sSubtotal  = Double.parseDouble(tblCarrito.getValueAt(filaSeleccionada, 4).toString());
+            DefaultTableModel modelo = (DefaultTableModel) tblCarrito.getModel();
+            modelo.removeRow(filaSeleccionada);
+
+            ImporteVenta = ImporteVenta - sSubtotal;
+
+            sImporteVenta = String.valueOf(ImporteVenta);
+            txtTotal.setText(sImporteVenta);
+        }
+        catch(Exception e){
+
+            JOptionPane.showMessageDialog(null,"Debes Seleccionar un Producto a Eliminar.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+
+    }//GEN-LAST:event_btnQuitarCarritoActionPerformed
+
+    private void btnAgregarCarritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarCarritoActionPerformed
+
+        CheckConnection con = new CheckConnection();
+
+        int filaSeleccionadaProductos = tblProductoEncontrado.getSelectedRow();
+
+        DefaultTableModel dtCarritoVenta = (DefaultTableModel)tblCarrito.getModel();
+
+        try{
+            if (filaSeleccionadaProductos == -1 ) //para validar que se seleccione fila
+            JOptionPane.showMessageDialog(null, "Debe Seleccionar un Producto ");
+            else
+            {
+                try
+                {
+                    if (filaSeleccionadaProductos != -1 )
+                    {
+                        if(jSpin_CantVenta.getValue().equals(""))
+                        JOptionPane.showMessageDialog(null, "Debe Ingresar Cantidad");
+                        else
+                        {   //Obtener Datos del Jtable de Producto Encontrado
+
+                            String nomProducto  = tblProductoEncontrado.getValueAt(filaSeleccionadaProductos, 0).toString();
+                            double proPrecio  = Double.parseDouble(tblProductoEncontrado.getValueAt(filaSeleccionadaProductos, 1).toString());
+                            String proTalla = tblProductoEncontrado.getValueAt(filaSeleccionadaProductos, 3).toString();
+                            int cantPedido   = (int) jSpin_CantVenta.getValue();
+
+                            if (cantPedido > 0)
+                            {
+                                //Calcular Importe de fila Sub Total Productos
+                                Double subTotal = proPrecio * cantPedido;
+                                String subTotalCarrito = String.valueOf(subTotal);
+
+                                //Pasarlo al jtable de Pedido para Efecturar Venta
+                                // Crea un Modelo de Tabla y asigna a un jTable
+
+                                dtCarritoVenta.addRow(new Object[]{nomProducto,proTalla,proPrecio,cantPedido,subTotalCarrito});
+
+                                ImporteVenta = ImporteVenta + subTotal;
+
+                                sImporteVenta = String.valueOf(ImporteVenta);
+
+                                txtTotal.setText(sImporteVenta);
+                                txtNombProducto.setText("");
+                            }
+                            else
+                            {
+                                JOptionPane.showMessageDialog(null, "Debe ingresar una cantidad mayor a 0");
+                            }
+
+                        }
+                    }
+
+                }
+                catch(HeadlessException | NumberFormatException e)
+                {
+                    System.out.println("ERROR2::::::::::");
+                }
+            }
+        }
+        catch(Exception e){
+            System.out.println("ERROR1::::::::::");
+
+        }
+    }//GEN-LAST:event_btnAgregarCarritoActionPerformed
+
+    private void btnBuscarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarProductoActionPerformed
+
+        String proNombre= txtNombProducto.getText();
+
+        CheckConnection con = new CheckConnection();
+
+        try{
+            DefaultTableModel tblVerProductos = new DefaultTableModel(); //Crear Modelo de Tabla
+            tblProductoEncontrado.setModel(tblVerProductos);  // Asignar el Modelo de Tabla
+
+            tblVerProductos.addColumn("IDProducto"); //Asigna nombre a cada columna del Modelo de Tabla
+            tblVerProductos.addColumn("Nombre");
+            tblVerProductos.addColumn("Precio");
+            tblVerProductos.addColumn("Categoría");
+            tblVerProductos.addColumn("Talla");
+
+            String query = "SELECT * FROM tblProductos WHERE proNombre LIKE '%"+proNombre+"%' ";
+
+            ResultSet rsRV = EjecutarQuery(con, query);
+
+            while(rsRV.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla
+
+                String idcattemp = rsRV.getString("IDCategoria");
+
+                String catNombre = ObtenerNombrePorID("tblCategorias", "IDCategoria", idcattemp, con, "catNombre");
+
+                tblVerProductos.addRow(new Object[] {rsRV.getString("IDProducto"),rsRV.getString("proNombre"),rsRV.getString("proPrecio"),
+                    catNombre,rsRV.getString("proTalla") });
+        }
+        rsRV.close();
+        }
+        catch(SQLException e){
+
+            JOptionPane.showMessageDialog(null,"Error en la Busqueda.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+
+    }//GEN-LAST:event_btnBuscarProductoActionPerformed
+
+    private void btnNuevoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoClienteActionPerformed
+
+        jF_AñadirProductos.setLocationRelativeTo(null);  //CENTRAR VENTANA NUEVO CLIENTE
+        jF_AñadirProductos.setVisible(true);
+
+        CheckConnection con = new CheckConnection();
+
+        try{
+
+            String query = "SELECT COUNT(*) AS Cantidad FROM tblProductos WHERE IDProducto IS NOT NULL";
+            ResultSet rsRV = EjecutarQuery(con, query);
+
+            // Crear un JComboBox Para Categorias
+            String query2 = "SELECT catNombre FROM tblCategorias";
+            ResultSet rsRV2 = EjecutarQuery(con, query2);
+
+            List<String> nombresCategorias = new ArrayList<>();
+
+            while (rsRV2.next()) {
+                String catNombre = rsRV2.getString("catNombre");
+                nombresCategorias.add(catNombre);
+            }
+            rsRV2.close();
+
+            // Crear un JComboBox y configurar su modelo de datos con los nombres de las categorías
+            DefaultComboBoxModel<String> comboBoxModel = new DefaultComboBoxModel<>(nombresCategorias.toArray(new String[0]));
+            jCBox_catNombre.setModel(comboBoxModel);
+
+            while(rsRV.next())
+            { //Extrae del rs y lo añade al Modelo de Tabla
+                int cantidad = rsRV.getInt("Cantidad");
+                if (cantidad > 0) {
+                    String newid = "PD" + String.format("%03d", cantidad+1);
+                    jText_IDProducto.setText(newid);
+                    System.out.println(newid);
+                } else {
+                    String newid = "PD001";
+                    jText_IDProducto.setText(newid);
+                    System.out.println(newid);
+
+                }
+            }
+            rsRV.close();
+        }
+        catch(SQLException e){
+
+            JOptionPane.showMessageDialog(null,"Hubo un Error en Leer la DB.","Mensaje",JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_btnNuevoClienteActionPerformed
+
+    private void txtTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTotalActionPerformed
+
+    private void txt_usuNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_usuNombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuNombreActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4518,7 +4489,7 @@ public class Form_Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane JScrollPane7;
     private javax.swing.JScrollPane JScrollPane8;
     private javax.swing.JScrollPane JScrollPane9;
-    public javax.swing.JTextField TxtSucursal;
+    private javax.swing.JTextField TxtSucursal;
     private javax.swing.JMenu bmEntidades;
     private javax.swing.JMenu bmGestionar;
     private javax.swing.JMenu bmInicio;
@@ -4716,9 +4687,9 @@ public class Form_Main extends javax.swing.JFrame {
     private javax.swing.JTable tblListaUsuarios;
     private javax.swing.JTable tblListaVentas;
     private javax.swing.JTable tblProductoEncontrado;
-    public javax.swing.JTextField txtIDVenta;
+    private javax.swing.JTextField txtIDVenta;
     private javax.swing.JTextField txtNombProducto;
-    public javax.swing.JTextField txtTotal;
-    public javax.swing.JTextField txt_usuNombre;
+    private javax.swing.JTextField txtTotal;
+    private javax.swing.JTextField txt_usuNombre;
     // End of variables declaration//GEN-END:variables
 }
