@@ -3,9 +3,9 @@ import java.sql.*;
 
 public class CheckConnection {
     
-    private String url = "jdbc:ucanaccess://F:\\tts\\JAVA\\ProyectoLabInn\\DB_v6.accdb"; 
-    private String usr = ""; 
-    private String pswd = ""; 
+    private final String url = "jdbc:ucanaccess://./DB_v6.accdb";
+    private final String usr = ""; 
+    private final String pswd = ""; 
     private Connection con=null; 
  
     public CheckConnection(){  /*Constructor, carga puente JDBC-ODBC*/ 
